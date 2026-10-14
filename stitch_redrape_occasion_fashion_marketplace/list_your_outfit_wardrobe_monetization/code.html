@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-container":"#fdc6d1","on-error":"#ffffff","primary":"#500519","primary-container":"#6e1d2d","secondary-fixed-dim":"#eeb8c4","tertiary":"#735c00","primary-fixed-dim":"#ffb2ba","secondary":"#7d535c","surface-bright":"#fbf9f6","outline":"#887273","on-surface":"#1b1c1a","surface":"#fbf9f6","on-secondary":"#ffffff","surface-container-low":"#f5f3f0","inverse-surface":"#30312f","on-secondary-fixed":"#30111a","secondary-fixed":"#ffd9e0","on-tertiary":"#ffffff","error":"#ba1a1a","on-background":"#1b1c1a","primary-fixed":"#ffd9dc","tertiary-container":"#cba72f","on-tertiary-container":"#4e3d00","on-primary":"#ffffff","surface-container":"#efeeeb","on-primary-fixed":"#400010","error-container":"#ffdad6","surface-tint":"#9c404e","surface-container-highest":"#e4e2df","on-primary-container":"#f38593","background":"#fbf9f6","surface-container-lowest":"#ffffff","on-secondary-fixed-variant":"#623c45","inverse-on-surface":"#f2f0ed","on-surface-variant":"#554244","on-primary-fixed-variant":"#7d2938","on-error-container":"#93000a","surface-dim":"#dbdad7","inverse-primary":"#ffb2ba","tertiary-fixed-dim":"#e9c349","surface-container-high":"#eae8e5","tertiary-fixed":"#ffe088","surface-variant":"#e4e2df","on-secondary-container":"#7a505a","on-tertiary-fixed":"#241a00","on-tertiary-fixed-variant":"#574500","outline-variant":"#dac0c2"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-md":"1rem","space-xl":"2.5rem","space-lg":"1.5rem","space-sm":"0.5rem","margin-mobile":"1.25rem","space-2xl":"4rem","space-xs":"0.25rem",margin:"3rem","gutter-mobile":"1rem",gutter:"1.5rem"},fontFamily:{"label-lg":["Plus Jakarta Sans"],"headline-lg":["Playfair Display"],"display-md":["Playfair Display"],"body-lg":["Plus Jakarta Sans"],"display-md-mobile":["Playfair Display"],"label-sm":["Plus Jakarta Sans"],"display-lg-mobile":["Playfair Display"],"headline-sm":["Playfair Display"],"label-md":["Plus Jakarta Sans"],"display-lg":["Playfair Display"],"title-md":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"headline-md":["Playfair Display"],"body-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Playfair Display"],"title-sm":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"]},fontSize:{"label-lg":["13px",{lineHeight:"18px",letterSpacing:"0.04em",fontWeight:"600"}],"headline-lg":["36px",{lineHeight:"44px",fontWeight:"500"}],"display-md":["44px",{lineHeight:"52px",letterSpacing:"-0.015em",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"display-md-mobile":["32px",{lineHeight:"38px",letterSpacing:"-0.01em",fontWeight:"400"}],"label-sm":["10px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"700"}],"display-lg-mobile":["38px",{lineHeight:"44px",letterSpacing:"-0.01em",fontWeight:"400"}],"headline-sm":["22px",{lineHeight:"30px",fontWeight:"600"}],"label-md":["11px",{lineHeight:"16px",letterSpacing:"0.06em",fontWeight:"600"}],"display-lg":["56px",{lineHeight:"64px",letterSpacing:"-0.02em",fontWeight:"400"}],"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"title-lg":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-md":["28px",{lineHeight:"36px",fontWeight:"500"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"headline-lg-mobile":["28px",{lineHeight:"36px",fontWeight:"500"}],"title-sm":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #6e1d2d
+- Font: playfairDisplay
+- Mode: light
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WNe-LHkniI1_N1_5u3jiqjpNZyf2-P9Rfux03MTAgWOwfr80IbIafvcJWq4RMFU0WMt495y4fmA-bv2w_wILsAWMn7PRD34Mo6vHjVGz276CfwTXRuxvAxyrpeClL5kqldn7VLcTU5XBkw3fXYPllV8Hvr6U2J6yhgbJ4KRyeJ1fzUXohCyYD-N7xzKUfvSZISJ896hk9fmN_fqVaMnn-3t7rQnb_QxbIPi-rh5F0Y7ILlIqoW74ZSDRE"/><a class="font-headline-sm text-headline-sm text-primary tracking-tight font-medium" data-path="home" href="#">ReDrape</a></div><nav class="hidden xl:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary font-label-md text-label-md rounded-lg shadow-sm"><a class="px-3 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="px-3 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="explore" href="#">Explore</a><a class="px-3 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="how-it-works" href="#">How It Works</a><a aria-current="page" class="px-3 py-2 uppercase tracking-wider transition-colors bg-primary-container text-on-primary font-label-md text-label-md rounded-lg shadow-sm" data-path="list-an-outfit" href="#">List an Outfit</a><a class="px-3 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="find-my-look-quiz" href="#">Find My Look Quiz</a></nav><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button aria-label="Search Archive" class="p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Saved Items" class="p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[22px]">favorite</span></a><button aria-label="Notifications" class="p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span></button></div><a aria-label="Account Profile" class="flex items-center ring-2 ring-primary/10 rounded-full transition-transform hover:scale-105" data-path="user-profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1X6q7XbmlukQvC4RwWhxMuvYf2zPMp1jcf-jqqKVgKJCuY13O71-cLec2Fn4R6c03CjUbyUFdAOC7LlMsd2EDQfLUzagJS-cBLX3zzyEQdEiyxHG7_EhwqojyMjsR4xVe4zPOWgf0KoD8ns0pzG5cFAbBQOIoZmdpM4-vXSUelta-yot7NTXEzdrqP7DGQGaZ_a7gOCuF0IfdpYBiXTg5fVGIm-bFxw1udzVndPZf3fI1hqHgiPd4oiWg"/></a></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Background -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-40 -left-40 w-[600px] h-[600px] bg-secondary-container/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-1/2 -right-40 w-[500px] h-[500px] bg-tertiary-container/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin py-space-xl md:py-space-2xl">
+<!-- Breadcrumb & Top Bar Status -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-xl">
+<div class="flex items-center gap-space-xs font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Archive Atelier</a>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-bold">Consignor Studio</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-normal">Create Listing</span>
+</div>
+<div class="flex items-center gap-space-xs px-3 py-1.5 bg-surface-container-low rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Curator Review SLA: &lt; 4 Hours</span>
+</div>
+</div>
+<!-- Main Two-Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- LEFT COLUMN: Step-by-Step Listing Wizard -->
+<div class="lg:col-span-7 flex flex-col gap-space-xl">
+<!-- Editorial Intro Header -->
+<div class="space-y-space-xs">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-widest rounded-full mb-1">
+<span class="material-symbols-outlined text-[14px]">recycling</span>
+              Circular Atelier Curation
+            </div>
+<h1 class="font-headline-lg text-headline-lg md:text-display-md text-on-surface tracking-tight">
+              Your wardrobe can earn too.
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+              List luxury and coveted occasion wear you rarely re-wear. We curate the archive, handle medical-grade dry cleaning, cover insured transit, and manage white-glove doorstep delivery.
+            </p>
+</div>
+<!-- Wizard Section 1: Visual Artifacts & Photos -->
+<div class="p-space-lg md:p-space-xl bg-surface-container-lowest rounded-xl shadow-sm space-y-space-lg">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Stage 01</span>
+<h3 class="font-title-lg text-title-lg text-on-surface">Atelier Photography</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2.5 py-1 rounded-md">4 Photos Recommended</span>
+</div>
+<!-- Upload Grid / Dropzone -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm">
+<!-- Photo 1: Front (Cover) -->
+<div class="group relative aspect-[3/4] rounded-lg overflow-hidden bg-surface-container flex flex-col items-center justify-center text-center p-space-xs transition-all hover:bg-surface-container-high">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Exquisite crimson and gold raw silk Indian bridal Anarkali dress hung gracefully against a warm alabaster studio wall, detailed zardozi work and fine hand embroidery catching warm directional gallery lighting." id="preview-img-slot-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR6Q0ElYkw3O5Y8GkxZzltvJJQnl9qA9ogZlyfhntQHLl4JfjjdJ2Ix02wlHUxNsBbV4T41_up5GqlQKitVqzlW2ZcVIebDXzan4ukdy4L5JRC2vrat4ONRylswVJdKNqjt98xwPp2wTG4CZjm4xKQyP3Ag-vKPWbh-CxJMa-PwiSxEKmFGUNMMNCYj1pU2VlPF3yFKDTo5EBu_HEBWyMiIz2ISaCKE9K5IznKAB5g0N_bgax1tCR3"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="px-2 py-1 bg-surface-container-lowest text-primary font-label-sm text-label-sm rounded-md shadow-sm">Replace</span>
+</div>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 bg-on-surface/70 backdrop-blur-sm text-on-primary font-label-sm text-label-sm rounded">Front (Cover)</div>
+</div>
+<!-- Photo 2: Back Silhouette -->
+<div class="group relative aspect-[3/4] rounded-lg overflow-hidden bg-surface-container flex flex-col items-center justify-center text-center p-space-xs transition-all hover:bg-surface-container-high">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Rear view of the opulent crimson raw silk Anarkali showing intricate back neckline tie tassels, delicate gold thread piping, and billowing tiered hemline in clean studio light." id="preview-img-slot-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2wCVbX0nlAxfzjnLFAI5hzdv3IB9Wgq6AjotR6gf6g3siTMWCqnC6ALIFkuDteGQdgcirMnSWJdFLjOM58xIgEEepjzL4ElJk-n3YermhPtLRVYsXwPGCGZKCrsGBwQQE1I_u-EaoAAie1p6UVxAorUB6eFx9RCMdtj_Jc-PnvSKyZY6CDAW0SGbM49CG2VOImf7lu2-tXWnawdXUJoxV16XwUETGwsbl8zeVrMmnMedlwgBTabBd"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="px-2 py-1 bg-surface-container-lowest text-primary font-label-sm text-label-sm rounded-md shadow-sm">Replace</span>
+</div>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 bg-on-surface/70 backdrop-blur-sm text-on-primary font-label-sm text-label-sm rounded">Back View</div>
+</div>
+<!-- Photo 3: Fabric & Embroidery Macro -->
+<div class="group relative aspect-[3/4] rounded-lg overflow-hidden bg-surface-container flex flex-col items-center justify-center text-center p-space-xs transition-all hover:bg-surface-container-high">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Extreme macro tactile close-up of intricate zari and dabka metallic embroidery on deep wine-red mulberry silk fabric, capturing metallic sheen and luxurious textile weave." id="preview-img-slot-3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmiNeIJtzPh5c_8kn3Rl6eyE1uCLdE8sDGxULNeLUfs1N8Dhn3gqDsYOFTSSYAIi8kL17dwZkoK0yOhXv54ncQf8hvZhTlUaIKxpJfnnqDzoCgYEHuvOS_51Z9q1dh8HXmJ6aunFWSODIR7U_BFGlIFF9c5o2Vs9uFsjRFFCkts5BQrTT-NfHKSZ2LBoDHMgLq15qHVitIXAKxb_bw1OUaKZPR0xafEIV1lwUirg_VR3YrNL_55Hj9"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="px-2 py-1 bg-surface-container-lowest text-primary font-label-sm text-label-sm rounded-md shadow-sm">Replace</span>
+</div>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 bg-on-surface/70 backdrop-blur-sm text-on-primary font-label-sm text-label-sm rounded">Fabric / Tag</div>
+</div>
+<!-- Photo 4: Worn in Real Life -->
+<label class="cursor-pointer aspect-[3/4] rounded-lg border-2 border-dashed border-outline-variant hover:border-primary bg-surface-container-low flex flex-col items-center justify-center text-center p-space-sm gap-2 transition-colors">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">add_a_photo</span>
+</div>
+<div class="space-y-0.5">
+<p class="font-label-md text-label-md text-on-surface">Worn Look</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real event photo</p>
+</div>
+<input accept="image/*" class="hidden" type="file"/>
+</label>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">verified</span>
+              High-resolution imagery improves rental bookings by 3.8× across Sabyasachi, Torani, and raw silk edits.
+            </p>
+</div>
+<!-- Wizard Section 2: Garment Credentials -->
+<div class="p-space-lg md:p-space-xl bg-surface-container-lowest rounded-xl shadow-sm space-y-space-lg">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Stage 02</span>
+<h3 class="font-title-lg text-title-lg text-on-surface">Garment Credentials &amp; Fit</h3>
+</div>
+<div class="space-y-space-md">
+<!-- Outfit Name -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant" for="input-outfit-title">Outfit Master Title</label>
+<input class="w-full px-4 py-3 bg-surface-container-low text-on-surface font-title-sm text-title-sm rounded-lg focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors" id="input-outfit-title" placeholder="e.g. Raw Silk Hand-embroidered Anarkali" type="text" value="Raw Silk Hand-embroidered Anarkali"/>
+</div>
+<!-- Designer / Maison Line -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="space-y-1">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant" for="input-designer">Couturier / Label</label>
+<input class="w-full px-4 py-3 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors" id="input-designer" type="text" value="Anita Dongre Atelier"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant" for="select-category">Wardrobe Silhouette</label>
+<select class="w-full px-4 py-3 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container-lowest shadow-inner" id="select-category">
+<option selected="">Women's Luxury Occasionwear</option>
+<option>Bridal Lehengas &amp; Sangeet Sets</option>
+<option>Contemporary Evening Gowns</option>
+<option>Heritage Sarees &amp; Drapes</option>
+<option>Men's Sherwani &amp; Bandhgala</option>
+</select>
+</div>
+</div>
+<!-- Occasion Multi-select Pills -->
+<div class="space-y-2">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Target Occasion Silhouettes (Select All That Apply)</label>
+<div class="flex flex-wrap gap-2" id="occasion-tag-cloud">
+<button class="occasion-pill active px-3.5 py-1.5 rounded-full font-label-md text-label-md uppercase tracking-wider bg-primary text-on-primary transition-all" type="button">Wedding</button>
+<button class="occasion-pill active px-3.5 py-1.5 rounded-full font-label-md text-label-md uppercase tracking-wider bg-primary text-on-primary transition-all" type="button">Reception</button>
+<button class="occasion-pill active px-3.5 py-1.5 rounded-full font-label-md text-label-md uppercase tracking-wider bg-primary text-on-primary transition-all" type="button">Festive</button>
+<button class="occasion-pill active px-3.5 py-1.5 rounded-full font-label-md text-label-md uppercase tracking-wider bg-primary text-on-primary transition-all" type="button">Sangeet</button>
+<button class="occasion-pill px-3.5 py-1.5 rounded-full font-label-md text-label-md uppercase tracking-wider bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-all" type="button">Cocktail &amp; Gala</button>
+<button class="occasion-pill px-3.5 py-1.5 rounded-full font-label-md text-label-md uppercase tracking-wider bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-all" type="button">Mehendi</button>
+</div>
+</div>
+<!-- Sizing and Exact Fit Specs -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-xs">
+<div class="space-y-1">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant" for="select-size">Standard Size</label>
+<select class="w-full px-4 py-3 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none" id="select-size">
+<option>XS (34)</option>
+<option>S (36)</option>
+<option selected="">M (38)</option>
+<option>L (40)</option>
+<option>XL (42)</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant" for="input-bust">Bust / Chest (In)</label>
+<input class="w-full px-4 py-3 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none" id="input-bust" type="text" value="36 - 38 in"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant" for="input-waist">Waist Fit (In)</label>
+<input class="w-full px-4 py-3 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none" id="input-waist" type="text" value="30 - 32 in"/>
+</div>
+</div>
+<!-- Provenance and Condition -->
+<div class="space-y-2 pt-space-xs">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Condition &amp; Wear History</label>
+<div class="p-space-md bg-surface-container-low rounded-lg space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+                      Like New / Pristine
+                    </span>
+<span class="font-label-sm text-label-sm text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">Tier 1 Rating</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Worn once for 4 hours at an indoor sangeet celebration. Authenticated and sanitized with eco-friendly hydro-cleaning. No pull marks or embellishment displacement.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Wizard Section 3: Circular Economics & Pricing Engine -->
+<div class="p-space-lg md:p-space-xl bg-surface-container-lowest rounded-xl shadow-sm space-y-space-lg">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Stage 03</span>
+<h3 class="font-title-lg text-title-lg text-on-surface">Valuation &amp; Daily Yield Engine</h3>
+</div>
+<div class="space-y-space-lg">
+<!-- Original Price & Location -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="space-y-1">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant" for="input-original-price">Original Purchase Price</label>
+<div class="relative flex items-center">
+<span class="absolute left-4 font-title-sm text-title-sm text-on-surface-variant">₹</span>
+<input class="w-full pl-8 pr-4 py-3 bg-surface-container-low text-on-surface font-title-md text-title-md rounded-lg focus:outline-none" id="input-original-price" type="number" value="18000"/>
+</div>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant" for="input-location">Lender Dispatch Hub</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">location_on</span>
+<input class="w-full pl-9 pr-4 py-3 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none" id="input-location" type="text" value="Indiranagar, Bengaluru"/>
+</div>
+</div>
+</div>
+<!-- Recommendation Slider -->
+<div class="p-space-md bg-surface-container-low rounded-xl space-y-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Dynamic Algorithm Recommended</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Daily Rental Price</h4>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md text-primary font-bold" id="slider-price-display">₹899</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">per day</span>
+</div>
+</div>
+<input class="w-full accent-primary h-2 bg-surface-container-highest rounded-lg cursor-pointer" id="pricing-slider" max="2499" min="499" step="50" type="range" value="899"/>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>₹499 (Fastest turnover)</span>
+<span class="text-primary font-semibold">Recommended: ₹899</span>
+<span>₹2,499 (High yield)</span>
+</div>
+</div>
+<!-- Outright Resale Opt-in Toggle -->
+<div class="flex items-center justify-between p-space-md bg-surface-container-high/40 rounded-xl">
+<div class="space-y-0.5 max-w-md">
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-title-sm text-on-surface">Rent-to-Own Permission</span>
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded-full">New</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Allow delighted borrowers to make an instant purchase buyout offer for <span class="font-semibold text-on-surface">₹6,500</span> without returning the garment.
+                  </p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="toggle-resale" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Circular Quality Checklist -->
+<div class="space-y-space-sm pt-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">ReDrape Quality Guarantee</span>
+<div class="space-y-2.5">
+<label class="flex items-center gap-3 p-3 bg-surface-container rounded-lg cursor-pointer hover:bg-surface-container-high transition-colors">
+<input checked="" class="w-5 h-5 text-primary rounded accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex-1">
+<span class="font-title-sm text-title-sm text-on-surface block">Professionally Sanitized</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dry-cleaned or hydro-treated within the past 14 days</span>
+</div>
+<span class="material-symbols-outlined text-emerald-700 text-[20px]">check_circle</span>
+</label>
+<label class="flex items-center gap-3 p-3 bg-surface-container rounded-lg cursor-pointer hover:bg-surface-container-high transition-colors">
+<input checked="" class="w-5 h-5 text-primary rounded accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex-1">
+<span class="font-title-sm text-title-sm text-on-surface block">Structural Flawlessness</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">No tears, runs, odor, or missing zardozi motifs</span>
+</div>
+<span class="material-symbols-outlined text-emerald-700 text-[20px]">check_circle</span>
+</label>
+<label class="flex items-center gap-3 p-3 bg-surface-container rounded-lg cursor-pointer hover:bg-surface-container-high transition-colors">
+<input checked="" class="w-5 h-5 text-primary rounded accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex-1">
+<span class="font-title-sm text-title-sm text-on-surface block">Label &amp; Authenticity Verified</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Original couturier brand tag or bespoke tailor signature intact</span>
+</div>
+<span class="material-symbols-outlined text-emerald-700 text-[20px]">check_circle</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Sticky Live Preview & Yield Projection -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg lg:sticky lg:top-24">
+<!-- Live Preview Frame Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden">
+<!-- Header bar of the card preview -->
+<div class="px-space-md py-3 bg-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface font-semibold">Live Marketplace Card Preview</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Borrower Perspective</span>
+</div>
+<!-- The ReDrape Canonical Outfit Card -->
+<div class="p-space-md flex flex-col gap-space-md">
+<div class="relative w-full aspect-[3/4] rounded-lg overflow-hidden bg-surface-container-low group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Stunning model wearing the crimson raw silk anarkali dress with elaborate zari embroidery, posed majestically in an Indian architectural palace courtyard at twilight." id="live-card-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu1Tnq39mkpBz4by8G7pe-H9dHQjjNkOCJxM8BUv-c0MlAjK4SxNwwRSH0WcZFmX2ijR91FGvJOkRCBs9PdJMO-PTcFUkIa245qSu7qDrshzUfOYNGd-UpfZjTeaO0_r8vOyJ0yYRiUmJNMD98L-pszkxGdFW6dU8haIIR2NZMSkHexP2n50iidcqzBzKtidWlxKw_BfCh75FKYBwoox_C67dqm89ObfKGd3UtvT4jaa5R_l31R6Qz"/>
+<!-- Gradient Scrim for Top & Bottom readability -->
+<div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60 pointer-events-none"></div>
+<!-- Floating Top Badges -->
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm uppercase tracking-wider rounded-full shadow-sm" id="live-card-badge-1">
+                    Wedding
+                  </span>
+<span class="px-2.5 py-1 bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm uppercase tracking-wider rounded-full shadow-sm" id="live-card-badge-2">
+                    Sangeet
+                  </span>
+</div>
+<div class="absolute top-3 right-3">
+<button aria-label="Favorite" class="w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-primary shadow-sm hover:scale-110 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<!-- Bottom Image Overlay info -->
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-primary">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm backdrop-blur-md bg-black/40 px-2 py-0.5 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+<span>Pristine Condition</span>
+</div>
+<div class="font-label-sm text-label-sm backdrop-blur-md bg-black/40 px-2 py-0.5 rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">location_on</span>
+<span id="live-card-location">Indiranagar, BLR</span>
+</div>
+</div>
+</div>
+<!-- Live Card Metadata -->
+<div class="space-y-space-xs">
+<div class="flex items-baseline justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-semibold" id="live-card-designer">Anita Dongre Atelier</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface" id="live-card-size">Size M (38)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1" id="live-card-title">
+                  Raw Silk Hand-embroidered Anarkali
+                </h3>
+<!-- Pricing Rows -->
+<div class="pt-space-xs flex items-center justify-between">
+<div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-title-lg text-title-lg text-primary font-bold" id="live-card-price">₹899</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ day</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline line-through" id="live-card-retail">Retail ₹18,000</p>
+</div>
+<div class="text-right" id="live-card-resale-chip">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary block font-bold">Resale Option</span>
+<span class="font-title-sm text-title-sm text-on-surface">₹6,500</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Projected Earnings Calculator Widget -->
+<div class="p-space-lg bg-surface-container rounded-xl shadow-sm space-y-space-md">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Projected Wardrobe Earnings</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Estimated based on South Asian festive calendar</p>
+</div>
+</div>
+<!-- Metric Highlights -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-sm bg-surface-container-lowest rounded-lg shadow-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block">Monthly Return (3 Rentals)</span>
+<span class="font-headline-md text-headline-md text-primary font-bold" id="calc-monthly-earn">₹8,090</span>
+<span class="font-body-sm text-body-sm text-emerald-700 block flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> 44.9% garment yield
+                </span>
+</div>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg shadow-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block">Break-even Horizon</span>
+<span class="font-headline-md text-headline-md text-tertiary font-bold">2.2 Months</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Pays off ₹18,000 retail</span>
+</div>
+</div>
+<!-- Dynamic SVG Cashflow Projection Chart -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Month 1</span>
+<span>Month 2 (ROI Breakeven)</span>
+<span>Month 3 (Pure Profit)</span>
+</div>
+<div class="h-10 w-full bg-surface-container-lowest rounded-lg p-1.5 flex items-end gap-1">
+<div class="h-2/5 flex-1 bg-secondary-fixed-dim rounded-sm transition-all duration-500"></div>
+<div class="h-3/5 flex-1 bg-secondary-container rounded-sm transition-all duration-500"></div>
+<div class="h-full flex-1 bg-primary rounded-sm transition-all duration-500"></div>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">shield_with_heart</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface font-semibold">100% Damage Protection Guarantee:</strong> Every borrower pays an escrow bond and ReDrape covers up to ₹50,000 in repair or total garment replacement.
+              </p>
+</div>
+</div>
+<!-- Submission Action Module -->
+<div class="space-y-space-sm">
+<button class="w-full py-4 px-6 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg uppercase tracking-widest rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 group" id="btn-publish-listing" type="button">
+<span>Publish to ReDrape Marketplace</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<div class="flex items-center justify-center gap-4 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-emerald-700">lock</span> Secure Consignment
+              </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-emerald-700">inventory_2</span> Doorstep Pickup Included
+              </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Real-time synchronization between Wizard fields and Live Card Preview
+  const titleInput = document.getElementById('input-outfit-title');
+  const cardTitle = document.getElementById('live-card-title');
+
+  const designerInput = document.getElementById('input-designer');
+  const cardDesigner = document.getElementById('live-card-designer');
+
+  const slider = document.getElementById('pricing-slider');
+  const priceDisplay = document.getElementById('slider-price-display');
+  const cardPrice = document.getElementById('live-card-price');
+  const monthlyCalc = document.getElementById('calc-monthly-earn');
+
+  const origPriceInput = document.getElementById('input-original-price');
+  const cardRetail = document.getElementById('live-card-retail');
+
+  const locationInput = document.getElementById('input-location');
+  const cardLocation = document.getElementById('live-card-location');
+
+  const sizeSelect = document.getElementById('select-size');
+  const cardSize = document.getElementById('live-card-size');
+
+  const toggleResale = document.getElementById('toggle-resale');
+  const cardResaleChip = document.getElementById('live-card-resale-chip');
+
+  if (titleInput && cardTitle) {
+    titleInput.addEventListener('input', (e) => {
+      cardTitle.textContent = e.target.value || 'Untitled Luxury Garment';
+    });
+  }
+
+  if (designerInput && cardDesigner) {
+    designerInput.addEventListener('input', (e) => {
+      cardDesigner.textContent = e.target.value || 'Curated Atelier';
+    });
+  }
+
+  if (slider && priceDisplay && cardPrice && monthlyCalc) {
+    slider.addEventListener('input', (e) => {
+      const val = parseInt(e.target.value, 10);
+      priceDisplay.textContent = '₹' + val.toLocaleString('en-IN');
+      cardPrice.textContent = '₹' + val.toLocaleString('en-IN');
+      // 3 rentals a month x 3 day average = 9 rental days minus minor platform fee
+      const projectedMonthly = Math.round(val * 9);
+      monthlyCalc.textContent = '₹' + projectedMonthly.toLocaleString('en-IN');
+    });
+  }
+
+  if (origPriceInput && cardRetail) {
+    origPriceInput.addEventListener('input', (e) => {
+      const num = parseInt(e.target.value, 10) || 0;
+      cardRetail.textContent = 'Retail ₹' + num.toLocaleString('en-IN');
+    });
+  }
+
+  if (locationInput && cardLocation) {
+    locationInput.addEventListener('input', (e) => {
+      cardLocation.textContent = e.target.value || 'Bengaluru';
+    });
+  }
+
+  if (sizeSelect && cardSize) {
+    sizeSelect.addEventListener('change', (e) => {
+      cardSize.textContent = 'Size ' + e.target.value;
+    });
+  }
+
+  if (toggleResale && cardResaleChip) {
+    toggleResale.addEventListener('change', (e) => {
+      cardResaleChip.style.display = e.target.checked ? 'block' : 'none';
+    });
+  }
+
+  // Interactive Occasion Tag Cloud Selection
+  const pillButtons = document.querySelectorAll('.occasion-pill');
+  pillButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const isActive = btn.classList.contains('active');
+      if (isActive) {
+        btn.classList.remove('active', 'bg-primary', 'text-on-primary');
+        btn.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      } else {
+        btn.classList.add('active', 'bg-primary', 'text-on-primary');
+        btn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      }
+    });
+  });
+
+  // Simple feedback on publish click
+  const publishBtn = document.getElementById('btn-publish-listing');
+  if (publishBtn) {
+    publishBtn.addEventListener('click', () => {
+      const prevContent = publishBtn.innerHTML;
+      publishBtn.innerHTML = `
+        <span class="material-symbols-outlined text-[20px] animate-spin">sync</span>
+        <span>Curator Authentication in Progress...</span>
+      `;
+      publishBtn.classList.add('opacity-90');
+      setTimeout(() => {
+        publishBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[20px]">check_circle</span>
+          <span>Listing Submitted for Approval!</span>
+        `;
+        publishBtn.classList.replace('bg-primary', 'bg-emerald-700');
+      }, 1200);
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-low text-on-surface-variant pt-space-2xl pb-space-xl"><div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-space-2xl"><div class="md:col-span-4 space-y-space-md"><div class="flex items-center gap-space-xs"><img alt="Brand logo. - Primary color: #6e1d2d
+- Font: playfairDisplay
+- Mode: light
+- Roundness: rounded-sm
+" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WNe-LHkniI1_N1_5u3jiqjpNZyf2-P9Rfux03MTAgWOwfr80IbIafvcJWq4RMFU0WMt495y4fmA-bv2w_wILsAWMn7PRD34Mo6vHjVGz276CfwTXRuxvAxyrpeClL5kqldn7VLcTU5XBkw3fXYPllV8Hvr6U2J6yhgbJ4KRyeJ1fzUXohCyYD-N7xzKUfvSZISJ896hk9fmN_fqVaMnn-3t7rQnb_QxbIPi-rh5F0Y7ILlIqoW74ZSDRE"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-medium">ReDrape</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm leading-relaxed">The high-fashion circular archive. Rent prestigious designer occasionwear and recirculate coveted couture with pristine care and authentic craftsmanship.</p></div><div class="md:col-span-2 space-y-space-sm"><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface font-semibold">The Archive</h4><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="hover:text-on-surface transition-colors"><a data-path="explore" href="#">All Occasions</a></li><li class="hover:text-on-surface transition-colors"><a data-path="explore" href="#">Bridal &amp; Sangeet</a></li><li class="hover:text-on-surface transition-colors"><a data-path="explore" href="#">Black Tie &amp; Gala</a></li><li class="hover:text-on-surface transition-colors"><a data-path="explore" href="#">Designer Directory</a></li></ul></div><div class="md:col-span-3 space-y-space-sm"><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface font-semibold">Circular Economy</h4><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="hover:text-on-surface transition-colors"><a data-path="how-it-works" href="#">The Rental Lifecycle</a></li><li class="hover:text-on-surface transition-colors"><a data-path="list-an-outfit" href="#">Lend &amp; Consign</a></li><li class="hover:text-on-surface transition-colors"><a data-path="find-my-look-quiz" href="#">Style Consultation Quiz</a></li><li class="hover:text-on-surface transition-colors"><a data-path="garment-care" href="#">Eco-Care &amp; Pristine Standards</a></li></ul></div><div class="md:col-span-3 space-y-space-sm"><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface font-semibold">The Atelier Gazette</h4><p class="font-body-sm text-body-sm leading-relaxed">Receive private showroom invitations, debut archive releases, and seasonal curation notes.</p><div class="flex items-center gap-space-xs pt-space-xs"><input class="w-full px-3 py-2 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary shadow-sm" placeholder="Your email address" type="email"/><button class="bg-primary text-on-primary px-4 py-2 font-label-sm text-label-sm uppercase tracking-wider rounded-lg hover:bg-primary-container transition-colors" type="button">Join</button></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-md text-label-md"><p>© 2025 ReDrape Archive Technologies Inc. All rights reserved.</p><div class="flex gap-space-lg"><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="#">Terms of Service</a><a class="hover:text-on-surface transition-colors" href="#">Insurance &amp; Authenticity</a></div></div></div></footer></body></html>

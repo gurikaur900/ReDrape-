@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-container":"#fdc6d1","on-error":"#ffffff","primary":"#500519","primary-container":"#6e1d2d","secondary-fixed-dim":"#eeb8c4","tertiary":"#735c00","primary-fixed-dim":"#ffb2ba","secondary":"#7d535c","surface-bright":"#fbf9f6","outline":"#887273","on-surface":"#1b1c1a","surface":"#fbf9f6","on-secondary":"#ffffff","surface-container-low":"#f5f3f0","inverse-surface":"#30312f","on-secondary-fixed":"#30111a","secondary-fixed":"#ffd9e0","on-tertiary":"#ffffff","error":"#ba1a1a","on-background":"#1b1c1a","primary-fixed":"#ffd9dc","tertiary-container":"#cba72f","on-tertiary-container":"#4e3d00","on-primary":"#ffffff","surface-container":"#efeeeb","on-primary-fixed":"#400010","error-container":"#ffdad6","surface-tint":"#9c404e","surface-container-highest":"#e4e2df","on-primary-container":"#f38593","background":"#fbf9f6","surface-container-lowest":"#ffffff","on-secondary-fixed-variant":"#623c45","inverse-on-surface":"#f2f0ed","on-surface-variant":"#554244","on-primary-fixed-variant":"#7d2938","on-error-container":"#93000a","surface-dim":"#dbdad7","inverse-primary":"#ffb2ba","tertiary-fixed-dim":"#e9c349","surface-container-high":"#eae8e5","tertiary-fixed":"#ffe088","surface-variant":"#e4e2df","on-secondary-container":"#7a505a","on-tertiary-fixed":"#241a00","on-tertiary-fixed-variant":"#574500","outline-variant":"#dac0c2"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-md":"1rem","space-xl":"2.5rem","space-lg":"1.5rem","space-sm":"0.5rem","margin-mobile":"1.25rem","space-2xl":"4rem","space-xs":"0.25rem",margin:"3rem","gutter-mobile":"1rem",gutter:"1.5rem"},fontFamily:{"label-lg":["Plus Jakarta Sans"],"headline-lg":["Playfair Display"],"display-md":["Playfair Display"],"body-lg":["Plus Jakarta Sans"],"display-md-mobile":["Playfair Display"],"label-sm":["Plus Jakarta Sans"],"display-lg-mobile":["Playfair Display"],"headline-sm":["Playfair Display"],"label-md":["Plus Jakarta Sans"],"display-lg":["Playfair Display"],"title-md":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"headline-md":["Playfair Display"],"body-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Playfair Display"],"title-sm":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"]},fontSize:{"label-lg":["13px",{lineHeight:"18px",letterSpacing:"0.04em",fontWeight:"600"}],"headline-lg":["36px",{lineHeight:"44px",fontWeight:"500"}],"display-md":["44px",{lineHeight:"52px",letterSpacing:"-0.015em",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"display-md-mobile":["32px",{lineHeight:"38px",letterSpacing:"-0.01em",fontWeight:"400"}],"label-sm":["10px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"700"}],"display-lg-mobile":["38px",{lineHeight:"44px",letterSpacing:"-0.01em",fontWeight:"400"}],"headline-sm":["22px",{lineHeight:"30px",fontWeight:"600"}],"label-md":["11px",{lineHeight:"16px",letterSpacing:"0.06em",fontWeight:"600"}],"display-lg":["56px",{lineHeight:"64px",letterSpacing:"-0.02em",fontWeight:"400"}],"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"title-lg":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-md":["28px",{lineHeight:"36px",fontWeight:"500"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"headline-lg-mobile":["28px",{lineHeight:"36px",fontWeight:"500"}],"title-sm":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #6e1d2d
+- Font: playfairDisplay
+- Mode: light
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WNe-LHkniI1_N1_5u3jiqjpNZyf2-P9Rfux03MTAgWOwfr80IbIafvcJWq4RMFU0WMt495y4fmA-bv2w_wILsAWMn7PRD34Mo6vHjVGz276CfwTXRuxvAxyrpeClL5kqldn7VLcTU5XBkw3fXYPllV8Hvr6U2J6yhgbJ4KRyeJ1fzUXohCyYD-N7xzKUfvSZISJ896hk9fmN_fqVaMnn-3t7rQnb_QxbIPi-rh5F0Y7ILlIqoW74ZSDRE"/><a class="font-headline-sm text-headline-sm text-primary tracking-tight font-medium" data-path="home" href="#">ReDrape</a></div><nav class="hidden xl:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary font-label-md text-label-md rounded-lg shadow-sm"><a class="px-3 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="px-3 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="explore" href="#">Explore</a><a class="px-3 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="how-it-works" href="#">How It Works</a><a class="px-3 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="list-an-outfit" href="#">List an Outfit</a><a aria-current="page" class="px-3 py-2 uppercase tracking-wider transition-colors bg-primary-container text-on-primary font-label-md text-label-md rounded-lg shadow-sm" data-path="find-my-look-quiz" href="#">Find My Look Quiz</a></nav><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button aria-label="Search Archive" class="p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Saved Items" class="p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[22px]">favorite</span></a><button aria-label="Notifications" class="p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span></button></div><a aria-label="Account Profile" class="flex items-center ring-2 ring-primary/10 rounded-full transition-transform hover:scale-105" data-path="user-profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1X6q7XbmlukQvC4RwWhxMuvYf2zPMp1jcf-jqqKVgKJCuY13O71-cLec2Fn4R6c03CjUbyUFdAOC7LlMsd2EDQfLUzagJS-cBLX3zzyEQdEiyxHG7_EhwqojyMjsR4xVe4zPOWgf0KoD8ns0pzG5cFAbBQOIoZmdpM4-vXSUelta-yot7NTXEzdrqP7DGQGaZ_a7gOCuF0IfdpYBiXTg5fVGIm-bFxw1udzVndPZf3fI1hqHgiPd4oiWg"/></a></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<div class="relative w-full overflow-hidden bg-surface-container-low py-space-xl md:py-space-2xl">
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/4 -bottom-20 w-80 h-80 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin relative z-10">
+<div class="max-w-3xl space-y-space-sm mb-space-xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest text-primary font-label-sm uppercase tracking-widest shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+          Bespoke Archive Matching • 3 Min Experience
+        </div>
+<h1 class="font-display-md text-display-md text-primary tracking-tight">Tell us the occasion.<br/><span class="italic font-normal text-on-surface">We'll curate your look.</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">Answer 4 quick styling questions to unlock your bespoke circular rental edit from India's coveted designer archives.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-xl p-space-md md:p-space-xl relative">
+<div class="flex items-center justify-between gap-4 mb-space-xl">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md font-bold" id="stepCounterBadge">1</span>
+<div>
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Step <span id="currentStepNumber">1</span> of 4</p>
+<h2 class="font-title-lg text-title-lg text-on-surface" id="stepHeaderTitle">What are you dressing for?</h2>
+</div>
+</div>
+<div class="w-36 md:w-56 bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-1/4 transition-all duration-500 ease-out" id="progressBarFill"></div>
+</div>
+</div>
+<div class="quiz-step transition-all duration-300" id="quizStep1">
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-gutter">
+<button class="group text-left rounded-lg overflow-hidden bg-surface-container-low transition-all duration-300 hover:shadow-lg focus:outline-none ring-offset-2 ring-primary" onclick="selectOccasion(this, 'Weddings &amp; Sangeet')" type="button">
+<div class="aspect-[3/4] w-full overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Opulent Indian bridal and sangeet ensemble in rich deep ruby red and antique gold embroidery, luxury editorial runway setting, gentle ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx6NFxUuzUixC5CZlxzm12HJDm_yaE6FOEgfBoUpdgL0XXJciOPSClEymw6M0UTDPMWloqXjEn2qqu8leZP23wd6jCNxf7k7uvpi4KjBW_5ui9YXYDljnhg07hfo_oTOwoLTkVkSYWgLZeFLT_V1Tr73kfbID7gbidkP5XX97D0Ta8JrIZ01A4ArDSZG_Ui8UCdtqDkolZZWL0keWavASgLD6U3EZuajcisgkPLJS3IFry-N2bmAhW"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="absolute top-2 right-2 check-indicator opacity-0 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center transition-opacity">
+<span class="material-symbols-outlined text-sm">check</span>
+</div>
+<div class="absolute bottom-3 left-3 right-3">
+<span class="font-label-sm text-label-sm text-surface-container-lowest/80 uppercase tracking-widest block mb-0.5">Celebration</span>
+<p class="font-title-sm text-title-sm text-surface-container-lowest font-medium">Weddings &amp; Sangeet</p>
+</div>
+</div>
+</button>
+<button class="group text-left rounded-lg overflow-hidden bg-surface-container-low transition-all duration-300 hover:shadow-lg focus:outline-none ring-offset-2 ring-primary" onclick="selectOccasion(this, 'College Farewell &amp; Prom')" type="button">
+<div class="aspect-[3/4] w-full overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Chic elegant evening slip gown and sleek metallic saree worn by stylish student at high fashion graduation gala, dusk golden hour light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbZg713OPJC1dRI-JMI_SthFZWHD_mkgsBOvNS_DAknQfudUIKQLjfTQsvV8TffgdBWwDeAKGDlDr2_1ViGYAQMohUSc1zo_DzqM1fiXLjdgKcF0cmLYgCyawPprnTleZNgTl9k_fmY8gp_IKzUGXxDqkLVsOJdi6Yi8HjIqJ6Cp-YTAbzJ4TkYY3w675ihHYLjtFV-ibArBLQs_UnJtZDXkFKLRPu5BExYanjCnGzvQ6nfcL9r_k4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="absolute top-2 right-2 check-indicator opacity-0 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center transition-opacity">
+<span class="material-symbols-outlined text-sm">check</span>
+</div>
+<div class="absolute bottom-3 left-3 right-3">
+<span class="font-label-sm text-label-sm text-surface-container-lowest/80 uppercase tracking-widest block mb-0.5">Milestone</span>
+<p class="font-title-sm text-title-sm text-surface-container-lowest font-medium">College Farewell &amp; Prom</p>
+</div>
+</div>
+</button>
+<button class="group text-left rounded-lg overflow-hidden bg-surface-container-low transition-all duration-300 hover:shadow-lg focus:outline-none ring-offset-2 ring-primary" onclick="selectOccasion(this, 'Cocktail &amp; Party')" type="button">
+<div class="aspect-[3/4] w-full overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Dramatic architectural silhouette party dress in shimmering textured midnight silk, modern metropolitan cocktail lounge ambiance with reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBupE14mmZszyv9K8eeK4iI7K4DKsETfg87JZ31iDKCllRZ771yhqkDvoycpgolh5KQt2akSggGOTPWtY4C_zw4J2FwfzjIqAnb6J09z8M8_qJ6jEvEPzHpjV6QzSYNFKpiStxCztP_kYmyRQ3bF75P0Uia_5umcNCRHuzYd0UIbzdwXbsYAYRupx_Uw9bigwVO7a0-D-CnqIku0jrcIJc0Fhq86in-kXwu14Ab7fjwdRLYHKixaijs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="absolute top-2 right-2 check-indicator opacity-0 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center transition-opacity">
+<span class="material-symbols-outlined text-sm">check</span>
+</div>
+<div class="absolute bottom-3 left-3 right-3">
+<span class="font-label-sm text-label-sm text-surface-container-lowest/80 uppercase tracking-widest block mb-0.5">Evening</span>
+<p class="font-title-sm text-title-sm text-surface-container-lowest font-medium">Cocktail &amp; Party</p>
+</div>
+</div>
+</button>
+<button class="group text-left rounded-lg overflow-hidden bg-surface-container-low transition-all duration-300 hover:shadow-lg focus:outline-none ring-offset-2 ring-primary" onclick="selectOccasion(this, 'Keynote &amp; Interview')" type="button">
+<div class="aspect-[3/4] w-full overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="High-tailored sharp linen and silk blend pantsuit in pristine ivory and caramel tones, confident poised model in modernist gallery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_wNE4UBT_17URSUWpgAued9aU-OWm825P08_jmEDzJVErAMPyZ4GhsAnNuVo1T9Z-72AiyoHb7PGXZCRJHz0foxMIX1eYjP2tBRYtfTB-WtrTmhnCiTzvTILrh3RWWFo8tZWEzgjV897yrItD72M9vY5JGC60W81fGzVe1fkY4HnQLcXpqieTdRsj3mKgSTewIdraDs825w1yloWiq4KNpfQskFeAJMdpjO8O3AnlLSr_ztD_sEnE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="absolute top-2 right-2 check-indicator opacity-0 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center transition-opacity">
+<span class="material-symbols-outlined text-sm">check</span>
+</div>
+<div class="absolute bottom-3 left-3 right-3">
+<span class="font-label-sm text-label-sm text-surface-container-lowest/80 uppercase tracking-widest block mb-0.5">Formal</span>
+<p class="font-title-sm text-title-sm text-surface-container-lowest font-medium">Keynote &amp; Interview</p>
+</div>
+</div>
+</button>
+<button class="group text-left rounded-lg overflow-hidden bg-surface-container-low transition-all duration-300 hover:shadow-lg focus:outline-none ring-offset-2 ring-primary" onclick="selectOccasion(this, 'Diwali &amp; Festive')" type="button">
+<div class="aspect-[3/4] w-full overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Lustrous Banarasi silk kurta sharara set with intricate handwoven zari borders, warm diya candlelight reflection with festive luxury mood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsZo5i6CuJphwv7AmT7g18bYolwylvIlIbRa52YEePCl8aymNmK-qnFVYHycFmdRVC3mcfRZ23xMGZtfGN0xgF8vI-LpFntvO4R7M6nOwNTtIxTanPzW2bMWTLPyzP1qIbG_9KF6PF9TkCxHXbqwYeZE2J-r7_77HSRy-Na3SIJRdcg6EgSpUoFYzkEpMabm0WZsRu5igoJZfmt4LhngC5R00RPDd139QKP66h-hIUA8sO6ep0Nwg8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="absolute top-2 right-2 check-indicator opacity-0 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center transition-opacity">
+<span class="material-symbols-outlined text-sm">check</span>
+</div>
+<div class="absolute bottom-3 left-3 right-3">
+<span class="font-label-sm text-label-sm text-surface-container-lowest/80 uppercase tracking-widest block mb-0.5">Heritage</span>
+<p class="font-title-sm text-title-sm text-surface-container-lowest font-medium">Diwali &amp; Festive</p>
+</div>
+</div>
+</button>
+<button class="group text-left rounded-lg overflow-hidden bg-surface-container-low transition-all duration-300 hover:shadow-lg focus:outline-none ring-offset-2 ring-primary" onclick="selectOccasion(this, 'Editorial Photoshoot')" type="button">
+<div class="aspect-[3/4] w-full overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Avant-garde couture sculptured organza cape dress on high-fashion model, minimalist studio background with dramatic high-contrast studio shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsVx18pmEClO0w4umQc75Fkk4IIPgAPblHwE2lhHKtbH_-aLAQWT7LO0NJ1TuFLjcwWygRkpe2XTLf5y0mjTOj6oaEZvY9JW4OS3fV8cHplIZO4Eo2q4e_I9FPx1vMro65WG7ILDF4YSfLMW86Ipgpp4NBN-OPfa_atHlL-KwkJuzpfgty5UcDt1J-HMixY6UAmdXGKMPvjuNFR8iPEG5BUGslm8Jc3t3rhCQBGKhn_FI0-WJfUUjE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="absolute top-2 right-2 check-indicator opacity-0 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center transition-opacity">
+<span class="material-symbols-outlined text-sm">check</span>
+</div>
+<div class="absolute bottom-3 left-3 right-3">
+<span class="font-label-sm text-label-sm text-surface-container-lowest/80 uppercase tracking-widest block mb-0.5">Couture</span>
+<p class="font-title-sm text-title-sm text-surface-container-lowest font-medium">Editorial Photoshoot</p>
+</div>
+</div>
+</button>
+</div>
+</div>
+<div class="quiz-step hidden transition-all duration-300" id="quizStep2">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-gutter">
+<button class="group text-left p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all shadow-sm" onclick="selectVibe(this, 'Royal Traditional')" type="button">
+<div class="h-32 rounded-lg mb-space-sm overflow-hidden relative flex items-end p-2 bg-gradient-to-br from-tertiary/20 to-primary-container/30">
+<div class="flex gap-1.5">
+<span class="w-5 h-5 rounded-full bg-[#70162A] shadow-sm"></span>
+<span class="w-5 h-5 rounded-full bg-[#D4AF37] shadow-sm"></span>
+<span class="w-5 h-5 rounded-full bg-[#2E4A3E] shadow-sm"></span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Royal Traditional</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Zari embroideries, brocades, royal heritage drapes &amp; velvets.</p>
+</button>
+<button class="group text-left p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all shadow-sm" onclick="selectVibe(this, 'Clean Minimalist')" type="button">
+<div class="h-32 rounded-lg mb-space-sm overflow-hidden relative flex items-end p-2 bg-gradient-to-br from-surface-container-highest to-surface-dim">
+<div class="flex gap-1.5">
+<span class="w-5 h-5 rounded-full bg-[#F5F3EF] shadow-sm"></span>
+<span class="w-5 h-5 rounded-full bg-[#DDD6CD] shadow-sm"></span>
+<span class="w-5 h-5 rounded-full bg-[#1A1918] shadow-sm"></span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Clean Minimalist</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fluid silk jerseys, monolithic lines, uncluttered elegance.</p>
+</button>
+<button class="group text-left p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all shadow-sm" onclick="selectVibe(this, 'Modern Indowestern')" type="button">
+<div class="h-32 rounded-lg mb-space-sm overflow-hidden relative flex items-end p-2 bg-gradient-to-br from-secondary-container/40 to-tertiary-container/30">
+<div class="flex gap-1.5">
+<span class="w-5 h-5 rounded-full bg-[#B85D6B] shadow-sm"></span>
+<span class="w-5 h-5 rounded-full bg-[#E5C158] shadow-sm"></span>
+<span class="w-5 h-5 rounded-full bg-[#523B44] shadow-sm"></span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Modern Indowestern</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pre-draped silhouettes, corset cholis, and sharp fusion cuts.</p>
+</button>
+<button class="group text-left p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all shadow-sm" onclick="selectVibe(this, 'High-Glam Statement')" type="button">
+<div class="h-32 rounded-lg mb-space-sm overflow-hidden relative flex items-end p-2 bg-gradient-to-br from-primary-fixed/50 to-primary-container/40">
+<div class="flex gap-1.5">
+<span class="w-5 h-5 rounded-full bg-[#500519] shadow-sm"></span>
+<span class="w-5 h-5 rounded-full bg-[#E89EAE] shadow-sm"></span>
+<span class="w-5 h-5 rounded-full bg-[#D1AC00] shadow-sm"></span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">High-Glam</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Micro-sequins, dramatic capes, bold high-slit drama.</p>
+</button>
+<button class="group text-left p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all shadow-sm" onclick="selectVibe(this, 'Tailored Power Dressing')" type="button">
+<div class="h-32 rounded-lg mb-space-sm overflow-hidden relative flex items-end p-2 bg-gradient-to-br from-surface-variant to-inverse-surface/20">
+<div class="flex gap-1.5">
+<span class="w-5 h-5 rounded-full bg-[#272B28] shadow-sm"></span>
+<span class="w-5 h-5 rounded-full bg-[#7E8880] shadow-sm"></span>
+<span class="w-5 h-5 rounded-full bg-[#EDE7DF] shadow-sm"></span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Tailored Power</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Structured shoulders, sculptural lapels, and bespoke tuxedos.</p>
+</button>
+</div>
+</div>
+<div class="quiz-step hidden transition-all duration-300" id="quizStep3">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter max-w-4xl mx-auto py-space-md">
+<button class="p-space-lg rounded-xl bg-surface-container-low hover:bg-surface-container text-left transition-all shadow-sm group" onclick="selectBudget(this, 'Under ₹500/day')" type="button">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary mb-space-md group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-lg">spa</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Access Edit</span>
+<p class="font-title-lg text-title-lg text-primary mt-1 font-semibold">Under ₹500</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Perfect for college soirees, daytime sangeet guest looks &amp; cocktail hours.</p>
+</button>
+<button class="p-space-lg rounded-xl bg-surface-container-low hover:bg-surface-container text-left transition-all shadow-sm group" onclick="selectBudget(this, '₹500 - ₹1,000/day')" type="button">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary mb-space-md group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-lg">auto_awesome</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Prestige Edit</span>
+<p class="font-title-lg text-title-lg text-primary mt-1 font-semibold">₹500 – ₹1,000</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Label favorites: draped organza sarees, tuxedo gowns, and fusion lehengas.</p>
+</button>
+<button class="p-space-lg rounded-xl bg-surface-container-low hover:bg-surface-container text-left transition-all shadow-sm group" onclick="selectBudget(this, '₹1,000 - ₹2,000/day')" type="button">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary mb-space-md group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-lg">diamond</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Signature Edit</span>
+<p class="font-title-lg text-title-lg text-primary mt-1 font-semibold">₹1,000 – ₹2,000</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Intricate handwork, bridal sister couture, and red-carpet galas.</p>
+</button>
+<button class="p-space-lg rounded-xl bg-surface-container-low hover:bg-surface-container text-left transition-all shadow-sm group" onclick="selectBudget(this, 'Couture &amp; Luxury ₹2,000+')" type="button">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary mb-space-md group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-lg">crown</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Atelier Run</span>
+<p class="font-title-lg text-title-lg text-primary mt-1 font-semibold">₹2,000+</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Premier runway couture masterpieces with complimentary trial fittings.</p>
+</button>
+</div>
+</div>
+<div class="quiz-step hidden transition-all duration-300" id="quizStep4">
+<div class="max-w-2xl mx-auto py-space-sm space-y-space-lg">
+<div>
+<label class="block font-label-lg text-label-lg uppercase tracking-wider text-on-surface mb-3">1. Select Standard Garment Fit</label>
+<div class="flex flex-wrap gap-2.5">
+<button class="fit-pill px-5 py-2.5 rounded-full bg-surface-container-low font-label-md text-label-md uppercase tracking-wider hover:bg-surface-container text-on-surface" onclick="selectFit(this, 'XS')" type="button">XS (32)</button>
+<button class="fit-pill px-5 py-2.5 rounded-full bg-surface-container-low font-label-md text-label-md uppercase tracking-wider hover:bg-surface-container text-on-surface" onclick="selectFit(this, 'S')" type="button">S (34)</button>
+<button class="fit-pill px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider shadow-sm" onclick="selectFit(this, 'M')" type="button">M (36)</button>
+<button class="fit-pill px-5 py-2.5 rounded-full bg-surface-container-low font-label-md text-label-md uppercase tracking-wider hover:bg-surface-container text-on-surface" onclick="selectFit(this, 'L')" type="button">L (38)</button>
+<button class="fit-pill px-5 py-2.5 rounded-full bg-surface-container-low font-label-md text-label-md uppercase tracking-wider hover:bg-surface-container text-on-surface" onclick="selectFit(this, 'XL')" type="button">XL (40)</button>
+<button class="fit-pill px-5 py-2.5 rounded-full bg-surface-container-low font-label-md text-label-md uppercase tracking-wider hover:bg-surface-container text-on-surface flex items-center gap-1.5" onclick="selectFit(this, 'Custom')" type="button">
+<span class="material-symbols-outlined text-sm">straighten</span> Custom Atelier Measurements
+                </button>
+</div>
+</div>
+<div>
+<label class="block font-label-lg text-label-lg uppercase tracking-wider text-on-surface mb-3">2. Preferred Occasion Rental Window</label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="p-3 bg-surface-container-low rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Rental Delivery Date</span>
+<p class="font-title-sm text-title-sm text-on-surface">Fri, Oct 24, 2025</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">calendar_today</span>
+</div>
+<div class="p-3 bg-surface-container-low rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Return Pickup Date</span>
+<p class="font-title-sm text-title-sm text-on-surface">Mon, Oct 27, 2025 (4 Days)</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">event_repeat</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-primary">eco</span>
+                Includes complimentary pre-steam packaging, door-to-door reverse transit, and eco-cleansing.
+              </p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-lg mt-space-lg border-t-0">
+<button class="invisible px-5 py-2.5 text-on-surface font-label-lg text-label-lg uppercase tracking-wider hover:text-primary transition-colors flex items-center gap-1" id="btnPrevStep" onclick="prevStep()" type="button">
+<span class="material-symbols-outlined text-lg">cloud_upload</span> Back
+          </button>
+<div class="flex items-center gap-space-sm">
+<button class="bg-primary text-on-primary px-8 py-3 rounded-lg font-label-lg text-label-lg uppercase tracking-wider hover:bg-primary-container shadow-md transition-all flex items-center gap-2" id="btnNextStep" onclick="nextStep()" type="button">
+<span>Continue</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+<button class="hidden bg-primary text-on-primary px-8 py-3 rounded-lg font-label-lg text-label-lg uppercase tracking-wider hover:bg-primary-container shadow-md transition-all flex items-center gap-2" id="btnSubmitQuiz" onclick="showResults()" type="button">
+<span>Generate My Edit</span>
+<span class="material-symbols-outlined text-lg">spark</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section class="w-full py-space-2xl bg-surface relative" id="resultsSection">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin">
+<div class="p-space-lg md:p-space-xl rounded-xl bg-surface-container mb-space-2xl relative overflow-hidden shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md relative z-10">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-[#3B5E49] animate-pulse"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">Curated Just For You</span>
+</div>
+<h2 class="font-display-md text-display-md text-primary">Your ReDrape Edit</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Handpicked for <span class="font-semibold text-on-surface">Farewell &amp; Formal Evening</span> with Modern Statement aesthetics.</p>
+</div>
+<div class="flex items-center gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="relative w-16 h-16 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="98, 100" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+<span class="absolute font-headline-sm text-headline-sm text-primary font-bold">98%</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-on-surface">Aesthetic Alignment</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Matches silhouette, occasion, &amp; dates</p>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-space-2xl">
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative aspect-[3/4] w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Midnight blue velvet wrap evening gown with subtle draped slit and architectural shoulders, model posing in luxury circular fashion showroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgZeCQzRo0-fGB8iJkWCgul0UYrksK6GuWyILdiwfH9LZxJkotkyznGJLa2ycAVaYcUFOmNMe6K8sIHfKA1coZ6Ls7jLbJ1E8dETdeCLYMGfbBBygh3G6b_XGmmvbvFcFDRjuGZAhVR6671dTDSy8-8seWekuo4mpGeuGIxxghFdVAZTWiNwNj4hgJ-J2Npc3nd-qjsVJshO9xkFb760r01QIfpuSGFNE1lkfMtdX1siCzL1YgE4GM"/>
+<div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold shadow-sm">
+              99% Match
+            </div>
+<button aria-label="Save to archive wishlist" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-primary transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+<div class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-inverse-surface/80 backdrop-blur-sm text-surface-bright font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3B5E49]"></span> Verified Pristine (Worn 1x)
+            </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase mb-1">
+<span>Atelier S&amp;N</span>
+<span>Size S • M</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium leading-snug">Midnight Velvet Wrap Gown</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Deep sapphire tailored wrap with interior boning &amp; fluid side sweep.</p>
+</div>
+<div class="pt-space-sm border-t border-transparent">
+<div class="flex items-baseline justify-between mb-3">
+<div>
+<span class="font-title-lg text-title-lg text-primary font-bold">₹699</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant"> / day</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-through">Retail ₹26,500</span>
+</div>
+<button class="w-full bg-primary text-on-primary py-2.5 rounded-lg font-label-lg text-label-lg uppercase tracking-wider hover:bg-primary-container transition-colors shadow-sm" type="button">
+                Reserve Rental
+              </button>
+</div>
+</div>
+</div>
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative aspect-[3/4] w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Contemporary metallic rose gold pre-draped cocktail saree with sculptural pallu, high editorial lighting against architectural concrete backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2PBZedqKCyogFK4D7GpuSa9JxsoaFHcMW7kBdDYF272O2D4PwMA3nGDhEjRsL_Fa0TfPdUkOsckPRuNFWT42IepWDkdiwyq-PmAdSaaJ967lzA29HTetN-wPBeltZnck4qttR1SJ-0qJWHDq27_FL-8viqw0yKY2OtjDwOYjjZgGSk2Xj-FSWPP7BE0AnTTa2uPaiPJVxnO1ntyeFQKSppqZDuK-sTWhxTZHqHWXgbR_IIzNj2IlZ"/>
+<div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold shadow-sm">
+              95% Match
+            </div>
+<button aria-label="Save to archive wishlist" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-primary transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+<div class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-inverse-surface/80 backdrop-blur-sm text-surface-bright font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3B5E49]"></span> Mint Condition
+            </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase mb-1">
+<span>Tarun Tahiliani Archive</span>
+<span>Size Free • S to L</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium leading-snug">Draped Rose Gold Saree</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Pre-pleated metallic lycra saree paired with sculpted shimmer bustier.</p>
+</div>
+<div class="pt-space-sm border-t border-transparent">
+<div class="flex items-baseline justify-between mb-3">
+<div>
+<span class="font-title-lg text-title-lg text-primary font-bold">₹849</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant"> / day</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-through">Retail ₹42,000</span>
+</div>
+<button class="w-full bg-primary text-on-primary py-2.5 rounded-lg font-label-lg text-label-lg uppercase tracking-wider hover:bg-primary-container transition-colors shadow-sm" type="button">
+                Reserve Rental
+              </button>
+</div>
+</div>
+</div>
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative aspect-[3/4] w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modernist ivory heavy satin blazer dress with asymmetric peak lapels and pearl cuff links, high fashion studio portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNkcDf1_2zfjGemh_hQ4iRqhlSuDVLwzotcV_L_dTx_7-VcRLexcfIocgb8o_1WAw2s8N_SeD2uZYP1E0nW6WByEsVFD-kWbYoWfUn9UEcLMSC0F-FjCVxspRBDkH4yFlHZfZ6_Z3qBf9JtKq_8mwe5ZLDXz4IF2Zb-l9ZlR1ayXAFIBzbXuqdknJuWzeC9kcxWxNDaliEEmpi4wdwgwoXgTJik7e49ADI6Cixb8MOgUMl5mSesWHt"/>
+<div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold shadow-sm">
+              92% Match
+            </div>
+<button aria-label="Save to archive wishlist" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-primary transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+<div class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-inverse-surface/80 backdrop-blur-sm text-surface-bright font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3B5E49]"></span> Verified Pristine
+            </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase mb-1">
+<span>House of Maeve</span>
+<span>Size M (36)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium leading-snug">Ivory Satin Blazer Dress</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Sharp double-breasted tailoring in silk mikado with internal corsetry.</p>
+</div>
+<div class="pt-space-sm border-t border-transparent">
+<div class="flex items-baseline justify-between mb-3">
+<div>
+<span class="font-title-lg text-title-lg text-primary font-bold">₹549</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant"> / day</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-through">Retail ₹22,000</span>
+</div>
+<button class="w-full bg-primary text-on-primary py-2.5 rounded-lg font-label-lg text-label-lg uppercase tracking-wider hover:bg-primary-container transition-colors shadow-sm" type="button">
+                Reserve Rental
+              </button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-space-md pt-space-md">
+<a class="w-full sm:w-auto text-center bg-primary text-on-primary px-8 py-3.5 rounded-lg font-label-lg text-label-lg uppercase tracking-wider hover:bg-primary-container transition-all shadow-md" data-path="explore" href="#">
+          View Full 24 Matches
+        </a>
+<button class="w-full sm:w-auto text-center px-8 py-3.5 rounded-lg font-label-lg text-label-lg uppercase tracking-wider text-on-surface hover:text-primary transition-colors flex items-center justify-center gap-2" onclick="restartQuiz()" type="button">
+<span class="material-symbols-outlined text-lg">restart_alt</span> Retake Quiz
+        </button>
+</div>
+</div>
+</section>
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter text-center md:text-left">
+<div class="p-space-md space-y-1">
+<span class="material-symbols-outlined text-primary text-3xl mb-1">verified</span>
+<h4 class="font-title-md text-title-md text-on-surface">100% Authenticity</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Every designer archive piece is verified by seasoned atelier appraisers.</p>
+</div>
+<div class="p-space-md space-y-1">
+<span class="material-symbols-outlined text-primary text-3xl mb-1">local_laundry_service</span>
+<h4 class="font-title-md text-title-md text-on-surface">Eco-Sanitized</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Treated with non-toxic hospital-grade ozone cleaning between rentals.</p>
+</div>
+<div class="p-space-md space-y-1">
+<span class="material-symbols-outlined text-primary text-3xl mb-1">swap_horizontal_circle</span>
+<h4 class="font-title-md text-title-md text-on-surface">Free Backup Size</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Receive an alternate size complimentary where stock permits.</p>
+</div>
+<div class="p-space-md space-y-1">
+<span class="material-symbols-outlined text-primary text-3xl mb-1">format_image_left</span>
+<h4 class="font-title-md text-title-md text-on-surface">Minor Wear Shield</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Complimentary insurance protects against accidental spills and light tears.</p>
+</div>
+</div>
+</div>
+</section>
+<script>
+    let currentStep = 1;
+    const totalSteps = 4;
+    const titles = {
+      1: "What are you dressing for?",
+      2: "What is your aesthetic vibe?",
+      3: "Budget per occasion wear",
+      4: "Your exact fit & preferred dates"
+    };
+
+    function updateStepUI() {
+      for (let i = 1; i <= totalSteps; i++) {
+        const stepEl = document.getElementById('quizStep' + i);
+        if (stepEl) {
+          if (i === currentStep) {
+            stepEl.classList.remove('hidden');
+          } else {
+            stepEl.classList.add('hidden');
+          }
+        }
+      }
+      document.getElementById('currentStepNumber').innerText = currentStep;
+      document.getElementById('stepCounterBadge').innerText = currentStep;
+      document.getElementById('stepHeaderTitle').innerText = titles[currentStep];
+      document.getElementById('progressBarFill').style.width = (currentStep / totalSteps * 100) + '%';
+
+      const prevBtn = document.getElementById('btnPrevStep');
+      const nextBtn = document.getElementById('btnNextStep');
+      const submitBtn = document.getElementById('btnSubmitQuiz');
+
+      if (currentStep > 1) {
+        prevBtn.classList.remove('invisible');
+      } else {
+        prevBtn.classList.add('invisible');
+      }
+
+      if (currentStep === totalSteps) {
+        nextBtn.classList.add('hidden');
+        submitBtn.classList.remove('hidden');
+      } else {
+        nextBtn.classList.remove('hidden');
+        submitBtn.classList.add('hidden');
+      }
+    }
+
+    function nextStep() {
+      if (currentStep < totalSteps) {
+        currentStep++;
+        updateStepUI();
+      }
+    }
+
+    function prevStep() {
+      if (currentStep > 1) {
+        currentStep--;
+        updateStepUI();
+      }
+    }
+
+    function selectOccasion(btn) {
+      const parent = btn.parentElement;
+      const allBtns = parent.querySelectorAll('button');
+      allBtns.forEach(b => {
+        b.classList.remove('ring-2', 'ring-primary');
+        const check = b.querySelector('.check-indicator');
+        if (check) check.classList.add('opacity-0');
+      });
+      btn.classList.add('ring-2', 'ring-primary');
+      const check = btn.querySelector('.check-indicator');
+      if (check) check.classList.remove('opacity-0');
+    }
+
+    function selectVibe(btn) {
+      const parent = btn.parentElement;
+      const allBtns = parent.querySelectorAll('button');
+      allBtns.forEach(b => {
+        b.classList.remove('ring-2', 'ring-primary', 'bg-surface-container-highest');
+        b.classList.add('bg-surface-container-low');
+      });
+      btn.classList.remove('bg-surface-container-low');
+      btn.classList.add('ring-2', 'ring-primary', 'bg-surface-container-highest');
+    }
+
+    function selectBudget(btn) {
+      const parent = btn.parentElement;
+      const allBtns = parent.querySelectorAll('button');
+      allBtns.forEach(b => {
+        b.classList.remove('ring-2', 'ring-primary', 'bg-surface-container-highest');
+        b.classList.add('bg-surface-container-low');
+      });
+      btn.classList.remove('bg-surface-container-low');
+      btn.classList.add('ring-2', 'ring-primary', 'bg-surface-container-highest');
+    }
+
+    function selectFit(btn) {
+      const parent = btn.parentElement;
+      const allBtns = parent.querySelectorAll('.fit-pill');
+      allBtns.forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        b.classList.add('bg-surface-container-low', 'text-on-surface');
+      });
+      btn.classList.remove('bg-surface-container-low', 'text-on-surface');
+      btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+    }
+
+    function showResults() {
+      const target = document.getElementById('resultsSection');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function restartQuiz() {
+      currentStep = 1;
+      updateStepUI();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface-variant pt-space-2xl pb-space-xl"><div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-space-2xl"><div class="md:col-span-4 space-y-space-md"><div class="flex items-center gap-space-xs"><img alt="Brand logo. - Primary color: #6e1d2d
+- Font: playfairDisplay
+- Mode: light
+- Roundness: rounded-sm
+" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WNe-LHkniI1_N1_5u3jiqjpNZyf2-P9Rfux03MTAgWOwfr80IbIafvcJWq4RMFU0WMt495y4fmA-bv2w_wILsAWMn7PRD34Mo6vHjVGz276CfwTXRuxvAxyrpeClL5kqldn7VLcTU5XBkw3fXYPllV8Hvr6U2J6yhgbJ4KRyeJ1fzUXohCyYD-N7xzKUfvSZISJ896hk9fmN_fqVaMnn-3t7rQnb_QxbIPi-rh5F0Y7ILlIqoW74ZSDRE"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-medium">ReDrape</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm leading-relaxed">The high-fashion circular archive. Rent prestigious designer occasionwear and recirculate coveted couture with pristine care and authentic craftsmanship.</p></div><div class="md:col-span-2 space-y-space-sm"><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface font-semibold">The Archive</h4><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="hover:text-on-surface transition-colors"><a data-path="explore" href="#">All Occasions</a></li><li class="hover:text-on-surface transition-colors"><a data-path="explore" href="#">Bridal &amp; Sangeet</a></li><li class="hover:text-on-surface transition-colors"><a data-path="explore" href="#">Black Tie &amp; Gala</a></li><li class="hover:text-on-surface transition-colors"><a data-path="explore" href="#">Designer Directory</a></li></ul></div><div class="md:col-span-3 space-y-space-sm"><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface font-semibold">Circular Economy</h4><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="hover:text-on-surface transition-colors"><a data-path="how-it-works" href="#">The Rental Lifecycle</a></li><li class="hover:text-on-surface transition-colors"><a data-path="list-an-outfit" href="#">Lend &amp; Consign</a></li><li class="hover:text-on-surface transition-colors"><a data-path="find-my-look-quiz" href="#">Style Consultation Quiz</a></li><li class="hover:text-on-surface transition-colors"><a data-path="garment-care" href="#">Eco-Care &amp; Pristine Standards</a></li></ul></div><div class="md:col-span-3 space-y-space-sm"><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface font-semibold">The Atelier Gazette</h4><p class="font-body-sm text-body-sm leading-relaxed">Receive private showroom invitations, debut archive releases, and seasonal curation notes.</p><div class="flex items-center gap-space-xs pt-space-xs"><input class="w-full px-3 py-2 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary shadow-sm" placeholder="Your email address" type="email"/><button class="bg-primary text-on-primary px-4 py-2 font-label-sm text-label-sm uppercase tracking-wider rounded-lg hover:bg-primary-container transition-colors" type="button">Join</button></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-md text-label-md"><p>© 2025 ReDrape Archive Technologies Inc. All rights reserved.</p><div class="flex gap-space-lg"><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="#">Terms of Service</a><a class="hover:text-on-surface transition-colors" href="#">Insurance &amp; Authenticity</a></div></div></div></footer></body></html>

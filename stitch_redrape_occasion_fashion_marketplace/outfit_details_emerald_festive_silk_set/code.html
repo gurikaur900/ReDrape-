@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-container":"#fdc6d1","on-error":"#ffffff","primary":"#500519","primary-container":"#6e1d2d","secondary-fixed-dim":"#eeb8c4","tertiary":"#735c00","primary-fixed-dim":"#ffb2ba","secondary":"#7d535c","surface-bright":"#fbf9f6","outline":"#887273","on-surface":"#1b1c1a","surface":"#fbf9f6","on-secondary":"#ffffff","surface-container-low":"#f5f3f0","inverse-surface":"#30312f","on-secondary-fixed":"#30111a","secondary-fixed":"#ffd9e0","on-tertiary":"#ffffff","error":"#ba1a1a","on-background":"#1b1c1a","primary-fixed":"#ffd9dc","tertiary-container":"#cba72f","on-tertiary-container":"#4e3d00","on-primary":"#ffffff","surface-container":"#efeeeb","on-primary-fixed":"#400010","error-container":"#ffdad6","surface-tint":"#9c404e","surface-container-highest":"#e4e2df","on-primary-container":"#f38593","background":"#fbf9f6","surface-container-lowest":"#ffffff","on-secondary-fixed-variant":"#623c45","inverse-on-surface":"#f2f0ed","on-surface-variant":"#554244","on-primary-fixed-variant":"#7d2938","on-error-container":"#93000a","surface-dim":"#dbdad7","inverse-primary":"#ffb2ba","tertiary-fixed-dim":"#e9c349","surface-container-high":"#eae8e5","tertiary-fixed":"#ffe088","surface-variant":"#e4e2df","on-secondary-container":"#7a505a","on-tertiary-fixed":"#241a00","on-tertiary-fixed-variant":"#574500","outline-variant":"#dac0c2"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-md":"1rem","space-xl":"2.5rem","space-lg":"1.5rem","space-sm":"0.5rem","margin-mobile":"1.25rem","space-2xl":"4rem","space-xs":"0.25rem",margin:"3rem","gutter-mobile":"1rem",gutter:"1.5rem"},fontFamily:{"label-lg":["Plus Jakarta Sans"],"headline-lg":["Playfair Display"],"display-md":["Playfair Display"],"body-lg":["Plus Jakarta Sans"],"display-md-mobile":["Playfair Display"],"label-sm":["Plus Jakarta Sans"],"display-lg-mobile":["Playfair Display"],"headline-sm":["Playfair Display"],"label-md":["Plus Jakarta Sans"],"display-lg":["Playfair Display"],"title-md":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"headline-md":["Playfair Display"],"body-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Playfair Display"],"title-sm":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"]},fontSize:{"label-lg":["13px",{lineHeight:"18px",letterSpacing:"0.04em",fontWeight:"600"}],"headline-lg":["36px",{lineHeight:"44px",fontWeight:"500"}],"display-md":["44px",{lineHeight:"52px",letterSpacing:"-0.015em",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"display-md-mobile":["32px",{lineHeight:"38px",letterSpacing:"-0.01em",fontWeight:"400"}],"label-sm":["10px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"700"}],"display-lg-mobile":["38px",{lineHeight:"44px",letterSpacing:"-0.01em",fontWeight:"400"}],"headline-sm":["22px",{lineHeight:"30px",fontWeight:"600"}],"label-md":["11px",{lineHeight:"16px",letterSpacing:"0.06em",fontWeight:"600"}],"display-lg":["56px",{lineHeight:"64px",letterSpacing:"-0.02em",fontWeight:"400"}],"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"title-lg":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-md":["28px",{lineHeight:"36px",fontWeight:"500"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"headline-lg-mobile":["28px",{lineHeight:"36px",fontWeight:"500"}],"title-sm":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #6e1d2d
+- Font: playfairDisplay
+- Mode: light
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WNe-LHkniI1_N1_5u3jiqjpNZyf2-P9Rfux03MTAgWOwfr80IbIafvcJWq4RMFU0WMt495y4fmA-bv2w_wILsAWMn7PRD34Mo6vHjVGz276CfwTXRuxvAxyrpeClL5kqldn7VLcTU5XBkw3fXYPllV8Hvr6U2J6yhgbJ4KRyeJ1fzUXohCyYD-N7xzKUfvSZISJ896hk9fmN_fqVaMnn-3t7rQnb_QxbIPi-rh5F0Y7ILlIqoW74ZSDRE"/><a class="font-headline-sm text-headline-sm text-primary tracking-tight font-medium" data-path="home" href="#">ReDrape</a></div><nav class="hidden xl:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary font-label-md text-label-md rounded-lg shadow-sm"><a class="px-3 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a aria-current="page" class="px-3 py-2 uppercase tracking-wider transition-colors bg-primary-container text-on-primary font-label-md text-label-md rounded-lg shadow-sm" data-path="explore" href="#">Explore</a><a class="px-3 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="how-it-works" href="#">How It Works</a><a class="px-3 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="list-an-outfit" href="#">List an Outfit</a><a class="px-3 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="find-my-look-quiz" href="#">Find My Look Quiz</a></nav><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button aria-label="Search Archive" class="p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Saved Items" class="p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[22px]">favorite</span></a><button aria-label="Notifications" class="p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span></button></div><a aria-label="Account Profile" class="flex items-center ring-2 ring-primary/10 rounded-full transition-transform hover:scale-105" data-path="user-profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1X6q7XbmlukQvC4RwWhxMuvYf2zPMp1jcf-jqqKVgKJCuY13O71-cLec2Fn4R6c03CjUbyUFdAOC7LlMsd2EDQfLUzagJS-cBLX3zzyEQdEiyxHG7_EhwqojyMjsR4xVe4zPOWgf0KoD8ns0pzG5cFAbBQOIoZmdpM4-vXSUelta-yot7NTXEzdrqP7DGQGaZ_a7gOCuF0IfdpYBiXTg5fVGIm-bFxw1udzVndPZf3fI1hqHgiPd4oiWg"/></a></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin py-space-md w-full">
+<!-- Breadcrumb & Metadata Bar -->
+<nav class="flex items-center gap-space-xs text-on-surface-variant mb-space-lg font-label-md text-label-md uppercase tracking-wider">
+<a class="hover:text-primary transition-colors" href="#">Archive</a>
+<span>/</span>
+<a class="hover:text-primary transition-colors" href="#">Festive &amp; Wedding</a>
+<span>/</span>
+<a class="hover:text-primary transition-colors" href="#">Lehengas</a>
+<span>/</span>
+<span class="text-on-surface font-semibold">Emerald Festive Silk Set</span>
+</nav>
+<!-- Main Editorial Showcase & Booking Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- LEFT COLUMN: Editorial Visual Gallery (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Main Large High-Resolution Display -->
+<div class="relative w-full aspect-[3/4] rounded-lg overflow-hidden bg-surface-container shadow-md group">
+<img alt="Emerald Festive Silk Set with Handcrafted Zardozi" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Editorial lookbook photograph of an exquisite emerald green raw silk lehenga set with intricate handcrafted gold zardozi and antique tilla embroidery. The model stands against a warm sunlit arched ivory courtyard. Fabric drapes with regal weight and rich luminous luster. High fashion editorial lighting with warm tone." id="main-product-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgM_w2II6QONqT28ZzHTXo7zih6vKubnMJoMC8CKOyLj64XmzIdflWLVBIrpGRtdw_Py9-rUOFFrjU10oDuD_JdRl6gRdC-YLHSMOuI4_ncu6hEt4j6uZQ3gEDYu01kjKHVb-7zZRaxdTYsSzPaxHn09YNVZLLkB8dkAn388INxYWnh5bFkDo-Fo8BJTffIPY0AHlLfRCiiE_bRU00FiNKsRLVlyGLXb5ltDZ9KNyrMq2A24P96gAu"/>
+<!-- Editorial Floating Badges -->
+<div class="absolute top-4 left-4 flex flex-col gap-2">
+<span class="px-3 py-1.5 bg-surface-container-lowest/90 backdrop-blur-md rounded-full font-label-sm text-label-sm uppercase tracking-widest text-primary flex items-center gap-1.5 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+              Curated Archive Edition
+            </span>
+<span class="px-3 py-1 bg-surface-container-lowest/95 backdrop-blur-md rounded-full font-label-sm text-label-sm tracking-wide text-on-surface flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-sm text-[#3B5E49]" style="font-variation-settings: 'FILL' 1;">verified</span>
+              Pristine Grade A
+            </span>
+</div>
+<!-- Zoom & Expand Micro-action -->
+<button aria-label="Inspect fabric detail" class="absolute bottom-4 right-4 p-2.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-on-surface hover:text-primary hover:bg-surface-container-lowest transition-all shadow-md" type="button">
+<span class="material-symbols-outlined text-lg">zoom_in</span>
+</button>
+</div>
+<!-- Thumbnails Gallery Strip (Multi-angle, Fabric closeup, Try-on) -->
+<div class="grid grid-cols-4 gap-space-sm">
+<button class="relative aspect-square rounded-lg overflow-hidden ring-2 ring-primary bg-surface-container shadow-sm focus:outline-none transition-all" onclick="swapImage(0)" type="button">
+<img alt="Full look angle" class="w-full h-full object-cover" data-alt="Full frontal studio portrait of model wearing the emerald festive silk lehenga set with matching embroidered blouse and sheer dupatta." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaQhbV8VBuntoB4d_S6ApTr-3ftUu08p1pahHaaFMjYPdLqOiUw-f8AGXYj-NeNEjUypAPuqLSWuZBvsoMABOI9GUHOkzhfTzPuSGWAekceDncrlwFBpuqifoo0zR1uRRe5OyV5_ksMASpVoMxUUPx1yJxNRTaJcRG9-JDXszyfrJuZmj8Qp7lZjazfURrKYj12-NOgtJvUPkBSfq6CvSzaLLbSQGWevskOwpLQr0gCsDhktESNBMq"/>
+<span class="absolute bottom-1 left-1 px-1.5 py-0.5 bg-inverse-surface/80 text-inverse-on-surface text-[9px] font-label-sm uppercase rounded">Front</span>
+</button>
+<button class="relative aspect-square rounded-lg overflow-hidden bg-surface-container shadow-sm hover:opacity-95 focus:outline-none transition-all" onclick="swapImage(1)" type="button">
+<img alt="Zari fabric macro detail" class="w-full h-full object-cover" data-alt="Close up macro shot of handcrafted gold zardozi threadwork on heavy emerald green silk fabric, showcasing hand-stitched antique metallic zari borders and sequins." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt8faQ7reCkUB96HnFniVYLwIMAaCnBXUonPWFLeWICSmTuAPwW1nzbWPTxCBpTqODkCq6cP4YbEWKtFCb3iJ8dDFdth9pb5qwGF4cnthEnA-JT3gcH_JWIQgR8WuEsYJ8RkmWX_tNG_3hnwICH4_uxt_T37oVRRDxhkOepjdh9jRoWx1v7EC9dl91zassTLn_lup-ZB0NOxsl8Swo20Jw_NM2tnB6GV9Cy8_zQCM-F6sNarrBZS-X"/>
+<span class="absolute bottom-1 left-1 px-1.5 py-0.5 bg-inverse-surface/80 text-inverse-on-surface text-[9px] font-label-sm uppercase rounded">Zari Detail</span>
+</button>
+<button class="relative aspect-square rounded-lg overflow-hidden bg-surface-container shadow-sm hover:opacity-95 focus:outline-none transition-all" onclick="swapImage(2)" type="button">
+<img alt="Blouse back detail" class="w-full h-full object-cover" data-alt="Back perspective photograph of the fitted emerald silk choli blouse highlighting delicate tasseled dori ties and scalloped border edge." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVY1V6FY6NOR6mhBycA6HnaesOWIVgaQJFcUjZFT1pZEMv98syXvOkGkMGr9FOGyUbd86Lcnp53tPRZPXZ-A9-othOx84tcpWsvjIlxKY3fU9bpGKFbM2WGaIH2gY8wlt6uggOeBgtJ1VqzrCJs9oKtrsplBZS17EV1AqyXhudePAT8yIqhSyelfadCwhqF1j-pCK_FzAEG0nrydGS4s7cNH54qk3XxBboBxzpqkBUd2ZBosw2O2Bb"/>
+<span class="absolute bottom-1 left-1 px-1.5 py-0.5 bg-inverse-surface/80 text-inverse-on-surface text-[9px] font-label-sm uppercase rounded">Back View</span>
+</button>
+<button class="relative aspect-square rounded-lg overflow-hidden bg-surface-container shadow-sm hover:opacity-95 focus:outline-none transition-all" onclick="swapImage(3)" type="button">
+<img alt="Community Renter Try-on" class="w-full h-full object-cover" data-alt="Editorial real customer mirror selfie wearing the emerald lehenga at an evening festive Diwali soiree with soft warm ambient chandeliers in background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE3Xdzu2YTA7gWRsSv-EE6Uf3_62H2VyfjIbGlm93sqaWA1k_IYBYkHVO3iUNEoOMUQBjChNaama4vqItvVH8ZPGYte14639eRF_TW5hydl7-2WrIGNeaF52LxKa24ZVfCgFOIVJtyqYCNT7AAtuHnZLgOM-8C7irQJURphKWb6SdEZJoPQuacwW_skE9roE1GLc61xaMuW5fMvNtCJPmJUwMocejkN74ayjG7oOZgr_4qiYkJv8iF"/>
+<span class="absolute bottom-1 left-1 px-1.5 py-0.5 bg-primary/90 text-on-primary text-[9px] font-label-sm uppercase rounded">Try-On (18)</span>
+</button>
+</div>
+<!-- Dry-Cleaning & Hygiene Certificate Seal Banner -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-2xl">sanitizer</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h4 class="font-title-sm text-title-sm text-on-surface">Bio-Ozone HydroClean™ Certified</h4>
+<span class="px-2 py-0.5 bg-[#eaf3ed] text-[#2c583b] rounded-full text-[10px] font-label-sm font-semibold tracking-wide">Pristine Seal #8942</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Steam sterilized &amp; hand-inspected in Bangalore atelier on Oct 24, 2025.</p>
+</div>
+</div>
+<button class="text-primary font-label-md text-label-md hover:underline uppercase tracking-wider shrink-0 flex items-center gap-1" type="button">
+            Audit Sheet <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- RIGHT COLUMN: Booking, Pricing & Circular Selection (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Header & Super Lender Credentials -->
+<div class="space-y-space-xs">
+<!-- Occasion Tags -->
+<div class="flex flex-wrap gap-1.5 pb-1">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wide">Festive</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wide">Diwali Edit</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wide">Engagement</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wide">Wedding Guest</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface leading-tight">Emerald Festive Silk Set with Handcrafted Zardozi</h1>
+<!-- Lender Trust Module -->
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-2.5">
+<img alt="Lender Ananya S." class="w-10 h-10 rounded-full object-cover shadow-sm ring-1 ring-primary/20" data-alt="Editorial profile portrait of lender Ananya S., stylish woman in refined neutral atelier studio with gentle smile." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuKWD9PsDo3pBJnX_VXvV0KRgEFt51BnMBAoBfMWyN5nQT0s3qR2SGVbuNLVdMHKLy1uXsR4n6Yto4VWtsy8UIVUaMPifsHlS6qz0oEvdXI3HJ_ySvOO5F--rTINAkd8zP4WvE3D8OuSJ19_tI72YRCOPLgc3xH2NbkxcuNrD8mS-VdaL9wnaEgBhCdF6hX8SwGW9pJVFh0MDeEQkH0KJDjWbB5JeGN3VjlXY31s6nm5yn55yfFx9F"/>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-on-surface">Archived by Ananya S.</span>
+<span class="px-1.5 py-0.5 bg-secondary-fixed text-on-secondary-fixed rounded text-[10px] font-label-sm uppercase">Super Lender</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span class="flex items-center text-tertiary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<strong class="font-semibold ml-0.5 text-on-surface">4.9</strong>
+</span>
+<span>·</span>
+<span>18 successful rentals</span>
+<span>·</span>
+<span class="text-[#3B5E49] font-medium">100% on-time delivery</span>
+</div>
+</div>
+</div>
+<button aria-label="Message lender" class="p-2 rounded-full hover:bg-surface-container-high text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-xl">chat_bubble_outline</span>
+</button>
+</div>
+</div>
+<!-- Value Breakdown Comparison Card -->
+<div class="bg-surface-container-low rounded-lg p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-baseline justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">ReDrape Rental</span>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-md text-headline-md font-semibold text-primary">₹699</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ day</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Estimated Retail</span>
+<span class="font-body-md text-body-md text-on-surface-variant line-through">₹8,500</span>
+</div>
+<div class="bg-[#e7f3ec] px-3 py-1.5 rounded-lg flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-[#245235] uppercase font-bold tracking-wider">Save ₹7,800</span>
+<span class="font-body-sm text-body-sm text-[#2c583b] font-medium">91% Circular Savings</span>
+</div>
+</div>
+<!-- Circular Metric Impact Ribbon -->
+<div class="flex items-center gap-2 pt-2 text-[11px] font-label-md text-on-surface-variant bg-surface-container-lowest/80 p-2 rounded">
+<span class="material-symbols-outlined text-base text-tertiary">eco</span>
+<span>Renting this look diverts <strong class="text-on-surface">4.2kg carbon</strong> &amp; preserves 2,100L pure water.</span>
+</div>
+</div>
+<!-- Circular Consumption Mode Toggle (Segmented Pill) -->
+<div class="space-y-space-xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Select Acquisition Flow</label>
+<div class="bg-surface-container p-1 rounded-lg grid grid-cols-3 gap-1">
+<button class="py-2.5 px-2 bg-surface-container-lowest text-primary rounded shadow-sm font-label-md text-label-md uppercase tracking-wider font-semibold text-center transition-all" type="button">
+              Rent ₹699/d
+            </button>
+<button class="py-2.5 px-2 text-on-surface-variant hover:text-on-surface rounded font-label-md text-label-md uppercase tracking-wider text-center transition-all" type="button">
+              Pre-Loved ₹3,899
+            </button>
+<button class="py-2.5 px-2 text-on-surface-variant hover:text-on-surface rounded font-label-md text-label-md uppercase tracking-wider text-center transition-all" type="button">
+              Exchange Swop
+            </button>
+</div>
+</div>
+<!-- Duration Selection Pills -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Rental Duration</label>
+<span class="font-body-sm text-body-sm text-primary flex items-center gap-1 cursor-pointer hover:underline">
+<span class="material-symbols-outlined text-sm">schedule</span> Free 1-Day Prep Cushion Included
+            </span>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<button class="duration-btn py-2 px-2 text-center rounded-lg bg-surface-container hover:bg-surface-container-high font-label-md text-label-md text-on-surface" onclick="selectDuration(this, 1)" type="button">
+              1 Day
+            </button>
+<button class="duration-btn py-2 px-2 text-center rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold shadow-sm" onclick="selectDuration(this, 2)" type="button">
+              2 Days
+            </button>
+<button class="duration-btn py-2 px-2 text-center rounded-lg bg-surface-container hover:bg-surface-container-high font-label-md text-label-md text-on-surface" onclick="selectDuration(this, 3)" type="button">
+              3 Days
+            </button>
+<button class="duration-btn py-2 px-2 text-center rounded-lg bg-surface-container hover:bg-surface-container-high font-label-md text-label-md text-on-surface relative" onclick="selectDuration(this, 4)" type="button">
+              Weekend
+              <span class="absolute -top-1.5 -right-1 px-1 bg-tertiary text-on-tertiary rounded text-[8px] font-bold">SAVE</span>
+</button>
+</div>
+</div>
+<!-- Dates Selection & Real-Time Availability Widget -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm space-y-space-sm">
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Occasion Date (Start)</span>
+<div class="flex items-center justify-between p-2.5 bg-surface-container-low rounded cursor-pointer hover:bg-surface-container transition-colors">
+<span class="font-title-sm text-title-sm text-on-surface font-medium">Nov 07, 2025</span>
+<span class="material-symbols-outlined text-primary text-lg">calendar_month</span>
+</div>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Return Pickup</span>
+<div class="flex items-center justify-between p-2.5 bg-surface-container-low rounded cursor-pointer hover:bg-surface-container transition-colors">
+<span class="font-title-sm text-title-sm text-on-surface font-medium">Nov 09, 2025</span>
+<span class="material-symbols-outlined text-on-surface-variant text-lg">event_available</span>
+</div>
+</div>
+</div>
+<!-- Micro Availability Sparkline / Mini-Timeline -->
+<div class="pt-1 flex items-center justify-between text-[11px] text-on-surface-variant">
+<span class="flex items-center gap-1.5 text-[#2c583b]">
+<span class="w-2 h-2 rounded-full bg-[#3B5E49]"></span> Available for immediate doorstep courier delivery
+            </span>
+<span class="font-semibold text-primary cursor-pointer hover:underline">View Calendar</span>
+</div>
+</div>
+<!-- Size Selector & Measurement Guide -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Available Size (Bespoke Tailored)</label>
+<button class="font-label-sm text-label-sm uppercase tracking-wider text-primary flex items-center gap-1 hover:underline" type="button">
+<span class="material-symbols-outlined text-sm">straighten</span> Custom Sizing Guide
+            </button>
+</div>
+<div class="grid grid-cols-3 gap-space-sm">
+<button class="p-3 rounded-lg bg-surface-container-lowest shadow-sm text-left hover:bg-surface-container transition-all" type="button">
+<div class="flex justify-between items-center">
+<span class="font-title-sm text-title-sm font-semibold text-on-surface">Size S</span>
+<span class="text-[10px] text-on-surface-variant">32 - 34"</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-xs">Waist: 28" · L: 42"</p>
+</button>
+<button class="p-3 rounded-lg bg-surface-container-lowest ring-2 ring-primary shadow-sm text-left relative" type="button">
+<span class="absolute -top-2 right-2 px-1.5 py-0.5 bg-primary text-on-primary rounded text-[9px] font-label-sm uppercase tracking-wider">Perfect Fit</span>
+<div class="flex justify-between items-center">
+<span class="font-title-sm text-title-sm font-semibold text-primary">Size M</span>
+<span class="text-[10px] text-primary font-medium">36 - 38"</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-xs">Waist: 30" · L: 43"</p>
+</button>
+<button class="p-3 rounded-lg bg-surface-container-lowest opacity-50 shadow-sm text-left cursor-not-allowed" type="button">
+<div class="flex justify-between items-center">
+<span class="font-title-sm text-title-sm font-semibold text-on-surface line-through">Size L</span>
+<span class="text-[10px] text-error font-medium">Rented Out</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-xs">Waitlist (3)</p>
+</button>
+</div>
+</div>
+<!-- Security Deposit & Trust Assurance -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">shield</span>
+<div>
+<span class="font-semibold text-on-surface">Security Deposit: ₹1,500</span>
+<p class="text-xs text-on-surface-variant">100% refunded to original source within 4 hours of return pass.</p>
+</div>
+</div>
+<span class="text-[11px] font-label-md text-on-surface-variant uppercase tracking-wider font-semibold">Zero Hassle</span>
+</div>
+<!-- Order Summary & Primary Action Tier -->
+<div class="pt-2 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-1">
+<span class="font-body-md text-body-md text-on-surface">2 Days Rental (₹699 × 2) + Insured Cleaning</span>
+<span class="font-title-md text-title-md font-semibold text-on-surface">₹1,398</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex-1 py-4 px-6 bg-primary text-on-primary rounded hover:bg-primary-container transition-all text-center font-label-lg text-label-lg uppercase tracking-widest shadow-md flex items-center justify-center gap-2 group" type="button">
+<span>Rent This Look</span>
+<span class="material-symbols-outlined text-xl transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+<button aria-label="Add to private archive wishlist" class="p-4 rounded bg-surface-container-lowest text-primary hover:bg-surface-container transition-colors shadow-sm flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<p class="text-center font-body-sm text-body-sm text-on-surface-variant">
+            ⚡ Free door-to-door courier dispatch &amp; prepaid return packaging box included.
+          </p>
+</div>
+</div>
+</div>
+<!-- BELOW THE FOLD: Deep Editorial Specifications & Details -->
+<div class="mt-space-2xl pt-space-xl">
+<!-- Interactive Information Tabs Navigation -->
+<div class="flex items-center gap-space-lg overflow-x-auto pb-space-sm border-b-0">
+<button class="tab-button font-headline-sm text-headline-sm text-primary pb-2 relative transition-colors font-medium" id="tab-btn-about" onclick="switchDetailTab('about')" type="button">
+          About &amp; Craftsmanship
+          <span class="tab-indicator absolute bottom-0 left-0 w-full h-[2px] bg-primary"></span>
+</button>
+<button class="tab-button font-headline-sm text-headline-sm text-on-surface-variant hover:text-on-surface pb-2 relative transition-colors font-normal" id="tab-btn-sizing" onclick="switchDetailTab('sizing')" type="button">
+          Size &amp; Fit Metrics
+          <span class="tab-indicator absolute bottom-0 left-0 w-full h-[2px] bg-transparent"></span>
+</button>
+<button class="tab-button font-headline-sm text-headline-sm text-on-surface-variant hover:text-on-surface pb-2 relative transition-colors font-normal" id="tab-btn-condition" onclick="switchDetailTab('condition')" type="button">
+          Pristine Guarantee
+          <span class="tab-indicator absolute bottom-0 left-0 w-full h-[2px] bg-transparent"></span>
+</button>
+<button class="tab-button font-headline-sm text-headline-sm text-on-surface-variant hover:text-on-surface pb-2 relative transition-colors font-normal" id="tab-btn-included" onclick="switchDetailTab('included')" type="button">
+          The Rental Kit
+          <span class="tab-indicator absolute bottom-0 left-0 w-full h-[2px] bg-transparent"></span>
+</button>
+</div>
+<!-- Tab Content Area -->
+<div class="mt-space-lg">
+<!-- PANEL 1: About & Craftsmanship -->
+<div class="tab-panel grid grid-cols-1 md:grid-cols-12 gap-gutter items-start" id="tab-panel-about">
+<div class="md:col-span-7 space-y-space-md">
+<h3 class="font-headline-md text-headline-md text-on-surface">The Heritage Silhouette</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              Tailored from luminous pure mulberry raw silk, this emerald lehenga brings understated grandeur to traditional gala dressing. Hand-embroidered by heritage artisans in Old Delhi, the skirt hem incorporates intricate floral vines utilizing antique gold zari, polished micro-sequins, and dabka coils that glint gently under chandeliers.
+            </p>
+<!-- Technical Specs Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm pt-space-xs">
+<div class="p-space-sm bg-surface-container-low rounded">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Primary Fabric</span>
+<p class="font-title-sm text-title-sm text-on-surface font-semibold mt-1">100% Pure Raw Silk</p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Dupatta Veil</span>
+<p class="font-title-sm text-title-sm text-on-surface font-semibold mt-1">Sheer Organza Silk</p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Lining Layer</span>
+<p class="font-title-sm text-title-sm text-on-surface font-semibold mt-1">Butter Crepe Cotton</p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Embroidery Work</span>
+<p class="font-title-sm text-title-sm text-on-surface font-semibold mt-1">Authentic Zardozi &amp; Tilla</p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Can-Can Underskirt</span>
+<p class="font-title-sm text-title-sm text-on-surface font-semibold mt-1">Double Layer Built-in</p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Weight Feel</span>
+<p class="font-title-sm text-title-sm text-on-surface font-semibold mt-1">Medium Regal (2.4 kg)</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-5 bg-surface-container-lowest p-space-lg rounded-lg shadow-sm space-y-space-md">
+<h4 class="font-title-lg text-title-lg text-on-surface font-serif">Care &amp; Wear Etiquette</h4>
+<ul class="space-y-space-sm font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
+<span>Do not spray heavy perfumes or hairsprays directly onto gold zari threadwork.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
+<span>Includes built-in drawstring waistband with safety concealed latkan hook.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
+<span>No dry-cleaning required upon return! Our master conservators handle everything.</span>
+</li>
+</ul>
+<div class="p-space-sm bg-secondary-fixed/50 rounded flex items-center gap-3 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-xl">verified_user</span>
+<p class="font-body-sm text-body-sm leading-tight">Every rental includes our ₹5,000 Micro-Damage Grace Waiver for accidental minor hem snags or bead loosening.</p>
+</div>
+</div>
+</div>
+<!-- PANEL 2: Sizing & Fit Notes -->
+<div class="tab-panel hidden grid grid-cols-1 md:grid-cols-12 gap-gutter" id="tab-panel-sizing">
+<div class="md:col-span-6 space-y-space-sm">
+<h3 class="font-headline-md text-headline-md text-on-surface">Precision Fit &amp; Measurements</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              The model pictured is 5'8" wearing size M with 3-inch heels. The lehenga skirt length is measured from upper pelvic bone to hem.
+            </p>
+<div class="space-y-2 pt-2">
+<div class="flex justify-between py-2 border-b-0 bg-surface-container-low px-3 rounded font-body-sm">
+<span class="font-semibold text-on-surface">Blouse Bust</span>
+<span class="text-on-surface-variant">36 - 38 inches (Includes 2" inside margins)</span>
+</div>
+<div class="flex justify-between py-2 border-b-0 bg-surface-container-low px-3 rounded font-body-sm">
+<span class="font-semibold text-on-surface">Blouse Length</span>
+<span class="text-on-surface-variant">14.5 inches</span>
+</div>
+<div class="flex justify-between py-2 border-b-0 bg-surface-container-low px-3 rounded font-body-sm">
+<span class="font-semibold text-on-surface">Lehenga Skirt Waist</span>
+<span class="text-on-surface-variant">28 to 32 inches (Adjustable silk drawstring)</span>
+</div>
+<div class="flex justify-between py-2 border-b-0 bg-surface-container-low px-3 rounded font-body-sm">
+<span class="font-semibold text-on-surface">Skirt Full Length</span>
+<span class="text-on-surface-variant">43 inches</span>
+</div>
+<div class="flex justify-between py-2 border-b-0 bg-surface-container-low px-3 rounded font-body-sm">
+<span class="font-semibold text-on-surface">Dupatta Dimensions</span>
+<span class="text-on-surface-variant">2.5 meters × 1 meter</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-6 bg-surface-container-low p-space-md rounded-lg flex flex-col justify-between">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-2">Need Bespoke Pinning?</h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                ReDrape delivers temporary, non-damaging hem tape strips and luxury pearl modesty pins with every rental package so you can adjust your drape effortlessly on the morning of your event.
+              </p>
+</div>
+<div class="mt-4 p-3 bg-surface-container-lowest rounded shadow-sm flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold">Have sizing doubts?</span>
+<button class="px-3 py-1.5 bg-primary-container text-on-primary font-label-sm text-label-sm uppercase rounded" type="button">Consult Stylist</button>
+</div>
+</div>
+</div>
+<!-- PANEL 3: Condition Guarantee -->
+<div class="tab-panel hidden space-y-space-md" id="tab-panel-condition">
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Condition: Pristine (Worn Twice)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl leading-relaxed">
+              This outfit was originally accessioned in October 2024 from lender Ananya S. It has undergone exactly two verified rental cycles (one Sangeet gala, one Diwali private dinner). All zari hand-embroidery elements have zero missing beads or pulled gold threads.
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md mt-space-md">
+<div class="p-space-sm bg-surface-container-low rounded space-y-1">
+<span class="text-[#3B5E49] font-title-sm text-title-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-base">verified</span> Hemline Integrity
+                </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Zero stains or ground scuffs. Verified spotless under UV inspection.</p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded space-y-1">
+<span class="text-[#3B5E49] font-title-sm text-title-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-base">verified</span> Zari Luster
+                </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">100% antique gold gloss preserved with zero tarnishing.</p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded space-y-1">
+<span class="text-[#3B5E49] font-title-sm text-title-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-base">verified</span> Hygiene Sanitization
+                </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Eco-friendly perchloroethylene-free botanical solvent cleaning.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- PANEL 4: What's Included -->
+<div class="tab-panel hidden" id="tab-panel-included">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm space-y-2">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">styler</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">The 3-Piece Couture Set</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Embroidered raw silk choli blouse, tiered flared silk lehenga skirt, and hand-bordered organza dupatta veil.</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm space-y-2">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">luggage</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Breathable Atelier Wardrobe Case</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cotton canvas zippered garment sleeve with internal padded velvet hanger to prevent fabric compression.</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm space-y-2">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">move_to_inbox</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Prepaid Return Mailer</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Self-adhesive sealed return sleeve with pre-scheduled automated courier doorstep pickup slip.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Lender Profile & Story Section -->
+<div class="mt-space-2xl bg-surface-container-low rounded-xl p-space-lg md:p-space-xl shadow-sm">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left gap-space-sm">
+<div class="relative">
+<img alt="Ananya S. Super Lender" class="w-24 h-24 rounded-full object-cover shadow-md ring-4 ring-surface-container-lowest" data-alt="Close up warm lifestyle portrait of Ananya S., elegant Indian curator in soft linen blazer in her architectural design studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdg9lf3fmbaNvE6jrYk4_pKeVFhwShOaMZUHSRJEdFriyNox-cH5jjyvQ1LRje1z6X9k2HKQP4y0wpJlIbGw2Ph9LpQ9TEhmxGmz967Zktd5iLQlJyrXJUGF9Sk_-uiJL7jYLklgq0brBo59fHaMhow8YDfeiXQ4uHze9VV5aGcVeYbDr0JRLEEfB8JjOJoQQGNwf_2h-c82E-HACExW_BXk133ctB7LsnduFJRFiz-kwGjLWWH9hn"/>
+<span class="absolute bottom-0 right-0 p-1 bg-primary text-on-primary rounded-full shadow">
+<span class="material-symbols-outlined text-sm">verified</span>
+</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Curated by Ananya Sharma</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Architect &amp; Textile Collector · Bengaluru</p>
+</div>
+<div class="flex items-center gap-3 py-1 font-label-md text-label-md">
+<span class="px-2.5 py-1 bg-surface-container-lowest rounded shadow-sm text-on-surface font-semibold">18 Completed Rentals</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest rounded shadow-sm text-on-surface font-semibold">4.9 ★ Rating</span>
+</div>
+</div>
+<div class="md:col-span-8 space-y-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Closet Philosophy</span>
+<blockquote class="font-headline-sm text-headline-sm italic text-on-surface leading-snug">
+            "I bought this lehenga for my sister's wedding and loved how regal yet buoyant it felt on the dance floor. Occasionwear is created to celebrate memories, not sit unworn in dark closets. ReDrape gives it a vibrant, ongoing story."
+          </blockquote>
+<!-- Recent Reviews Snippets -->
+<div class="pt-space-sm grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-sm rounded shadow-sm space-y-1">
+<div class="flex items-center justify-between text-body-sm">
+<span class="font-semibold text-on-surface">Meera V.</span>
+<span class="text-tertiary text-xs">★★★★★</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">"The emerald fabric had everyone asking where I got it. Pristine condition and Ananya was so sweet with sizing tips!"</p>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded shadow-sm space-y-1">
+<div class="flex items-center justify-between text-body-sm">
+<span class="font-semibold text-on-surface">Tanvi R.</span>
+<span class="text-tertiary text-xs">★★★★★</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">"Arrived packed like a luxury bridal gift with fragrant cedar sachet. Easiest return process imaginable."</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Complete The Look: Recommended Curated Rental Accessories -->
+<div class="mt-space-2xl mb-space-2xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-xs">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Curated Editorial Pairing</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Complete This Look</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Accessory rentals ship in the same pristine atelier case with unified single-box dispatch and return.
+        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Accessory Card 1 -->
+<div class="group bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden">
+<img alt="Kundan Polki Chaandbaali Earrings" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Pair of handcrafted heritage uncut Kundan and pearl chandelier chaandbaali earrings with emerald green teardrop drops on ivory silk base." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGtc4VgIbI98ovxgNi7_yilXoXpTU9T-aus5NttGyqbU9IAnrj9ZU1mHH6t4_Mj8GL637pI-D7bRn1VlZj-J74pO1_Z47jZ-6jxwg7E9akskS0BanKvVRjrOEExmnsXijBv6URyJK9xamKkrP952mxqeY56VemjXGKf73AAoo_YRv7wBpkDtAyDFW9G-7LBSSq6A7_rrudUKAWB2xB_sesCWDFJT2hjVwtZnnjzA0UwH5vCGAaNO1a"/>
+<span class="absolute top-3 left-3 px-2 py-0.5 bg-surface-container-lowest/90 backdrop-blur rounded font-label-sm text-label-sm uppercase tracking-wider text-primary">Jewelry</span>
+<button aria-label="Add to wishlist" class="absolute top-3 right-3 p-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur text-on-surface hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="p-space-sm flex flex-col justify-between flex-1">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Amrapali Archive</span>
+<h4 class="font-title-sm text-title-sm text-on-surface font-semibold line-clamp-1">Kundan Polki Chaandbaali Earrings</h4>
+</div>
+<div class="pt-space-xs flex items-baseline justify-between">
+<span class="font-title-sm text-title-sm font-semibold text-primary">₹249 <span class="font-body-sm font-normal text-on-surface-variant">/ day</span></span>
+<button class="px-2.5 py-1 bg-surface-container hover:bg-primary hover:text-on-primary rounded text-xs font-label-sm uppercase transition-colors" type="button">Add to Bag</button>
+</div>
+</div>
+</div>
+<!-- Accessory Card 2 -->
+<div class="group bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden">
+<img alt="Embroidered Raw Silk Potli" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Handcrafted champagne gold raw silk potli bag adorned with pearl tassels and intricate floral embroidery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCltGmzQQ0hJaQGLa7WALnbx6FqlerHuMG00Y8N_FiRlIWKhEkc1eZV2K5w5SLuZd5Lg8PhzTTwl2p9BphuQteWZRLQSUI4T3f_1oalDR3jIHamc0qHL9xNWPnIi96PxP7W_CxKn8mNIReceprq-NBsxZEIxu-6cZW0ldsjoL2n6QnJn6OyYX19gK0ylG_O6yuiZ8WiSamq1RthQPgexNElT10YroolDBzJBfWDhbPHLq82LfmVMQhK"/>
+<span class="absolute top-3 left-3 px-2 py-0.5 bg-surface-container-lowest/90 backdrop-blur rounded font-label-sm text-label-sm uppercase tracking-wider text-primary">Clutch</span>
+<button aria-label="Add to wishlist" class="absolute top-3 right-3 p-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur text-on-surface hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="p-space-sm flex flex-col justify-between flex-1">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sabyasachi Heritage</span>
+<h4 class="font-title-sm text-title-sm text-on-surface font-semibold line-clamp-1">Champagne Hand-Embroidered Potli</h4>
+</div>
+<div class="pt-space-xs flex items-baseline justify-between">
+<span class="font-title-sm text-title-sm font-semibold text-primary">₹189 <span class="font-body-sm font-normal text-on-surface-variant">/ day</span></span>
+<button class="px-2.5 py-1 bg-surface-container hover:bg-primary hover:text-on-primary rounded text-xs font-label-sm uppercase transition-colors" type="button">Add to Bag</button>
+</div>
+</div>
+</div>
+<!-- Accessory Card 3 -->
+<div class="group bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden">
+<img alt="Antique Gold Zari Juttis" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Traditional handcrafted golden Punjabi juttis with intricate antique tilla needlework and padded velvet sole." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK0S-CWLkwg4SuS2NaP9hRQ4G9L3eTV1FVb1DZRLP2E0Y4T_4KWkITnLpMG65BKkcGF9uJ-RA8gcIL_k79-NfKMtffy4jNfjzmgtP2TKB-iAkAmoOc87A59supP-K-Rpzcsyjm9G41veZZnMkLK4f8ntQoI1IrTb5saFZIBBi2HqBh5lE8PiaNfLSX0bQtMDzE7YVKLIcq2Is9jJR3JrNddbqgmJ4DkZkeNHtjCUIixSrfoJtW0cFY"/>
+<span class="absolute top-3 left-3 px-2 py-0.5 bg-surface-container-lowest/90 backdrop-blur rounded font-label-sm text-label-sm uppercase tracking-wider text-primary">Footwear</span>
+<button aria-label="Add to wishlist" class="absolute top-3 right-3 p-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur text-on-surface hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="p-space-sm flex flex-col justify-between flex-1">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Needledust Atelier</span>
+<h4 class="font-title-sm text-title-sm text-on-surface font-semibold line-clamp-1">Antique Gold Zari Mojaris (Size 38)</h4>
+</div>
+<div class="pt-space-xs flex items-baseline justify-between">
+<span class="font-title-sm text-title-sm font-semibold text-primary">₹149 <span class="font-body-sm font-normal text-on-surface-variant">/ day</span></span>
+<button class="px-2.5 py-1 bg-surface-container hover:bg-primary hover:text-on-primary rounded text-xs font-label-sm uppercase transition-colors" type="button">Add to Bag</button>
+</div>
+</div>
+</div>
+<!-- Accessory Card 4 -->
+<div class="group bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden">
+<img alt="Emerald &amp; Kundan Maang Tikka" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Subtle 22k gold plated delicate Maang Tikka with emerald center gem and teardrop pearls." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN4Up5aUekj6iEBbSIY18LZaotcVbIf2oRZdEmbDGvH4KDQzoBtop3M9qLW-zzpW-Rth2AcdHpd5HoHbWSfWWtIvxHH5-ux5aBEu19-YdjiNB7B2a2i8Y_oP6K_h3smXUiOLniWukTDiC5NF9nIQU-poLaiQBc5N2TnEa-TNrLXSSg9t7GNzmunDQKgfwCM6FiZFp_Qx68pRJIrgK-oGAu6Qu_bPGlB0TNxN8nKCg5NeUFqc0D18ea"/>
+<span class="absolute top-3 left-3 px-2 py-0.5 bg-surface-container-lowest/90 backdrop-blur rounded font-label-sm text-label-sm uppercase tracking-wider text-primary">Headpiece</span>
+<button aria-label="Add to wishlist" class="absolute top-3 right-3 p-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur text-on-surface hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="p-space-sm flex flex-col justify-between flex-1">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tribe Amrapali</span>
+<h4 class="font-title-sm text-title-sm text-on-surface font-semibold line-clamp-1">Emerald Gem &amp; Kundan Maang Tikka</h4>
+</div>
+<div class="pt-space-xs flex items-baseline justify-between">
+<span class="font-title-sm text-title-sm font-semibold text-primary">₹129 <span class="font-body-sm font-normal text-on-surface-variant">/ day</span></span>
+<button class="px-2.5 py-1 bg-surface-container hover:bg-primary hover:text-on-primary rounded text-xs font-label-sm uppercase transition-colors" type="button">Add to Bag</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Client-side Script for Micro-interactions -->
+<script>
+    function swapImage(index) {
+      const mainImg = document.getElementById('main-product-image');
+      const thumbs = document.querySelectorAll('.lg\\:col-span-7 .grid-cols-4 button');
+      thumbs.forEach((btn, i) => {
+        if(i === index) {
+          btn.classList.add('ring-2', 'ring-primary');
+        } else {
+          btn.classList.remove('ring-2', 'ring-primary');
+        }
+      });
+    }
+
+    function selectDuration(button, days) {
+      document.querySelectorAll('.duration-btn').forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-sm');
+        btn.classList.add('bg-surface-container', 'text-on-surface');
+      });
+      button.classList.remove('bg-surface-container', 'text-on-surface');
+      button.classList.add('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-sm');
+    }
+
+    function switchDetailTab(tabKey) {
+      const tabs = ['about', 'sizing', 'condition', 'included'];
+      tabs.forEach(key => {
+        const panel = document.getElementById('tab-panel-' + key);
+        const btn = document.getElementById('tab-btn-' + key);
+        const indicator = btn.querySelector('.tab-indicator');
+
+        if (key === tabKey) {
+          panel.classList.remove('hidden');
+          btn.classList.add('text-primary', 'font-medium');
+          btn.classList.remove('text-on-surface-variant', 'font-normal');
+          indicator.classList.remove('bg-transparent');
+          indicator.classList.add('bg-primary');
+        } else {
+          panel.classList.add('hidden');
+          btn.classList.remove('text-primary', 'font-medium');
+          btn.classList.add('text-on-surface-variant', 'font-normal');
+          indicator.classList.remove('bg-primary');
+          indicator.classList.add('bg-transparent');
+        }
+      });
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface-variant pt-space-2xl pb-space-xl"><div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-space-2xl"><div class="md:col-span-4 space-y-space-md"><div class="flex items-center gap-space-xs"><img alt="Brand logo. - Primary color: #6e1d2d
+- Font: playfairDisplay
+- Mode: light
+- Roundness: rounded-sm
+" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WNe-LHkniI1_N1_5u3jiqjpNZyf2-P9Rfux03MTAgWOwfr80IbIafvcJWq4RMFU0WMt495y4fmA-bv2w_wILsAWMn7PRD34Mo6vHjVGz276CfwTXRuxvAxyrpeClL5kqldn7VLcTU5XBkw3fXYPllV8Hvr6U2J6yhgbJ4KRyeJ1fzUXohCyYD-N7xzKUfvSZISJ896hk9fmN_fqVaMnn-3t7rQnb_QxbIPi-rh5F0Y7ILlIqoW74ZSDRE"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-medium">ReDrape</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm leading-relaxed">The high-fashion circular archive. Rent prestigious designer occasionwear and recirculate coveted couture with pristine care and authentic craftsmanship.</p></div><div class="md:col-span-2 space-y-space-sm"><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface font-semibold">The Archive</h4><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="hover:text-on-surface transition-colors"><a data-path="explore" href="#">All Occasions</a></li><li class="hover:text-on-surface transition-colors"><a data-path="explore" href="#">Bridal &amp; Sangeet</a></li><li class="hover:text-on-surface transition-colors"><a data-path="explore" href="#">Black Tie &amp; Gala</a></li><li class="hover:text-on-surface transition-colors"><a data-path="explore" href="#">Designer Directory</a></li></ul></div><div class="md:col-span-3 space-y-space-sm"><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface font-semibold">Circular Economy</h4><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="hover:text-on-surface transition-colors"><a data-path="how-it-works" href="#">The Rental Lifecycle</a></li><li class="hover:text-on-surface transition-colors"><a data-path="list-an-outfit" href="#">Lend &amp; Consign</a></li><li class="hover:text-on-surface transition-colors"><a data-path="find-my-look-quiz" href="#">Style Consultation Quiz</a></li><li class="hover:text-on-surface transition-colors"><a data-path="garment-care" href="#">Eco-Care &amp; Pristine Standards</a></li></ul></div><div class="md:col-span-3 space-y-space-sm"><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface font-semibold">The Atelier Gazette</h4><p class="font-body-sm text-body-sm leading-relaxed">Receive private showroom invitations, debut archive releases, and seasonal curation notes.</p><div class="flex items-center gap-space-xs pt-space-xs"><input class="w-full px-3 py-2 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary shadow-sm" placeholder="Your email address" type="email"/><button class="bg-primary text-on-primary px-4 py-2 font-label-sm text-label-sm uppercase tracking-wider rounded-lg hover:bg-primary-container transition-colors" type="button">Join</button></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-md text-label-md"><p>© 2025 ReDrape Archive Technologies Inc. All rights reserved.</p><div class="flex gap-space-lg"><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="#">Terms of Service</a><a class="hover:text-on-surface transition-colors" href="#">Insurance &amp; Authenticity</a></div></div></div></footer></body></html>
