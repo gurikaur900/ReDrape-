@@ -30,9 +30,7 @@ const QUIZ_STEPS = [
     question: "What's your preferred colour palette?",
     subtitle: 'Select the tones that resonate with your vision.',
     options: [
-      { icon: 'circl
-        
-    e', label: 'Jewel Tones (Emerald, Sapphire)', color: '#1b4332' },
+      { icon: 'circle', label: 'Jewel Tones (Emerald, Sapphire)', color: '#1b4332' },
       { icon: 'circle', label: 'Neutrals (Ivory, Cream, Beige)', color: '#c9a96e' },
       { icon: 'circle', label: 'Pastels (Lilac, Blush, Powder)', color: '#e8b4b8' },
       { icon: 'circle', label: 'Darks (Navy, Midnight, Burgundy)', color: '#500519' },
